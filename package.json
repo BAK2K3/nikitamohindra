@@ -1,0 +1,19 @@
+{
+  "name": "nikitamohindra",
+  "version": "1.0.0",
+  "description": "Art Portfolio Website for Nikita Mohindra",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nikita",
+    "Mohindra",
+    "Art"
+  ],
+  "author": "Ben Kavanagh",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}
