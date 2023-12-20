@@ -12,7 +12,7 @@
     />
   </head>
   <body
-    class="flex flex-col h-screen bg-customWhite font-assistant text-customBlack"
+    class="flex flex-col min-h-screen bg-customWhite font-assistant text-customBlack"
   >
     <!-- Nav Bar -->
     <nav class="relative z-50 flex flex-wrap items-center justify-between p-6">
@@ -20,7 +20,9 @@
         id="navHeading"
         class="flex items-center flex-shrink-0 mr-6 duration-300 text-customBlack"
       >
-        <span class="ml-4 text-4xl font-caveat">Nikita Mohindra</span>
+        <a href="/src/html/index.html"
+          ><span class="ml-4 text-4xl font-caveat">Nikita Mohindra</span></a
+        >
       </div>
       <!-- Open Close -->
       <div class="block lg:hidden">
@@ -59,37 +61,37 @@
       >
         <div class="flex flex-row justify-end text-sm md:text-lg lg:flex-grow">
           <a
-            href="#responsive-header"
+            href="/src/html/index.html"
             class="block mt-4 mr-4 underline duration-300 lg:inline-block lg:mt-0"
           >
             Home
           </a>
           <a
-            href="#responsive-header"
+            href="/src/html/about.html"
             class="block mt-4 mr-4 duration-300 lg:inline-block lg:mt-0 hover:text-customBlue"
           >
             About
           </a>
           <a
-            href="#responsive-header"
+            href="/src/html/collections.html"
             class="block mt-4 mr-4 duration-300 lg:inline-block lg:mt-0 hover:text-customBlue"
           >
             Collections
           </a>
           <a
-            href="#responsive-header"
+            href="/src/html/interior.html"
             class="block mt-4 mr-4 duration-300 lg:inline-block lg:mt-0 hover:text-customBlue"
           >
             Interior
           </a>
           <a
-            href="#responsive-header"
+            href="/src/html/as_seen.html"
             class="block mt-4 mr-4 duration-300 lg:inline-block lg:mt-0 hover:text-customBlue"
           >
             As Seen
           </a>
           <a
-            href="#responsive-header"
+            href="/src/html/contact.html"
             class="block mt-4 mr-4 duration-300 lg:inline-block lg:mt-0 hover:text-customBlue"
           >
             Contact
@@ -107,19 +109,43 @@
         class="flex flex-col space-y-3 text-xl font-light text-center text-customWhite"
       >
         <img src="/src/img/sig-white.png" class="max-h-12" alt="" />
-        <a class="duration-300 hover:text-customBlue" href="#">Home</a>
-        <a class="duration-300 hover:text-customBlue" href="#">About</a>
-        <a class="duration-300 hover:text-customBlue" href="#">Collections</a>
-        <a class="duration-300 hover:text-customBlue" href="#">Interior</a>
-        <a class="duration-300 hover:text-customBlue" href="#">As Seen</a>
-        <a class="duration-300 hover:text-customBlue" href="#">Contact</a>
+        <a
+          class="underline duration-300 underline-offset-4 hover:text-customBlue"
+          href="/src/html/index.html"
+          >Home</a
+        >
+        <a
+          class="duration-300 hover:text-customBlue"
+          href="/src/html/about.html"
+          >About</a
+        >
+        <a
+          class="duration-300 hover:text-customBlue"
+          href="/src/html/collections.html"
+          >Collections</a
+        >
+        <a
+          class="duration-300 hover:text-customBlue"
+          href="/src/html/interior.html"
+          >Interior</a
+        >
+        <a
+          class="duration-300 hover:text-customBlue"
+          href="/src/html/as_seen.html"
+          >As Seen</a
+        >
+        <a
+          class="duration-300 hover:text-customBlue"
+          href="/src/html/contact.html"
+          >Contact</a
+        >
       </div>
     </div>
 
-    <section class="flex-grow"></section>
+    <section id="homeBanner" class="flex-grow"></section>
 
     <footer
-      class="sticky z-50 flex flex-wrap justify-center flex-shrink w-screen p-3 align-middle"
+      class="sticky bottom-0 z-50 flex flex-wrap justify-center flex-shrink w-screen pt-3 pb-3 align-middle w-max-screen"
     >
       <a
         class="transition duration-300 ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
@@ -141,59 +167,6 @@
     </footer>
 
     <!-- Javascript code -->
-    <script>
-      let menu = document.getElementById("menu");
-      let closeMenuButton = document.getElementById("closeIcon");
-      let openMenuButton = document.getElementById("openIcon");
-      let navHeading = document.getElementById("navHeading");
-      let hamburgerMenu = document.getElementById("hamburgerMenu");
-      let instagramIcon = document.getElementById("instagramIcon");
-
-      function toggleMenu() {
-        if (menu.classList.contains("closed")) {
-          menu.classList.remove("w-0", "h-0", "opacity-0", "closed");
-          menu.classList.add("w-screen", "h-screen", "opacity-95", "open");
-          closeMenuButton.classList.remove("hidden");
-          closeMenuButton.classList.add("flex");
-          openMenuButton.classList.remove("flex");
-          openMenuButton.classList.add("hidden");
-          navHeading.classList.remove("text-customBlack");
-          navHeading.classList.add("text-customWhite");
-          hamburgerMenu.classList.remove(
-            "text-customBlack",
-            "border-customBlack",
-            "stroke-customBlack"
-          );
-          hamburgerMenu.classList.add(
-            "text-text-customWhite",
-            "border-customWhite",
-            "stroke-customWhite"
-          );
-          instagramIcon.classList.remove("text-customBlack");
-          instagramIcon.classList.add("text-customWhite");
-        } else {
-          menu.classList.remove("w-screen", "h-screen", "opacity-95", "open");
-          menu.classList.add("w-0", "h-0", "opacity-0", "closed");
-          closeMenuButton.classList.remove("flex");
-          closeMenuButton.classList.add("hidden");
-          openMenuButton.classList.remove("hidden");
-          openMenuButton.classList.add("flex");
-          navHeading.classList.remove("text-customWhite");
-          navHeading.classList.add("text-customBlack");
-          hamburgerMenu.classList.remove(
-            "text-text-customWhite",
-            "border-customWhite",
-            "stroke-customWhite"
-          );
-          hamburgerMenu.classList.add(
-            "text-customBlack",
-            "border-customBlack",
-            "stroke-customBlack"
-          );
-          instagramIcon.classList.remove("text-customWhite");
-          instagramIcon.classList.add("text-customBlack");
-        }
-      }
-    </script>
+    <script src="/src/js/nav.js"></script>
   </body>
 </html>
