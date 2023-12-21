@@ -25,8 +25,8 @@ function toggleMenu() {
       "border-customWhite",
       "stroke-customWhite"
     );
-    instagramIcon.classList.remove("text-customBlack");
-    instagramIcon.classList.add("text-customWhite");
+    instagramIcon.classList.remove("fill-customBlack");
+    instagramIcon.classList.add("fill-customWhite");
   } else {
     menu.classList.remove("w-screen", "h-screen", "opacity-95", "open");
     menu.classList.add("w-0", "h-0", "opacity-0", "closed");
@@ -46,7 +46,7 @@ function toggleMenu() {
       "border-customBlack",
       "stroke-customBlack"
     );
-    instagramIcon.classList.remove("text-customWhite");
-    instagramIcon.classList.add("text-customBlack");
+    instagramIcon.classList.remove("fill-customWhite");
+    instagramIcon.classList.add("fill-customBlack");
   }
 }
