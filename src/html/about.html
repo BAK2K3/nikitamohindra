@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Arimo&family=Assistant&family=Caveat:wght@400;600&family=Yellowtail&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Assistant&family=Caveat:wght@400;600&family=Yellowtail&family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
   <body
-    class="flex flex-col min-h-screen overflow-y-hidden bg-customWhite font-assistant text-customBlack"
+    class="flex flex-col min-h-screen text-base bg-customWhite font-montserrat text-customBlack"
   >
     <!-- Nav Bar -->
     <nav
@@ -62,7 +62,9 @@
       <div
         class="max-h-0 lg:!max-h-none lg:!overflow-hidden w-full block overflow-hidden flex-grow lg:flex lg:items-center transition-all lg:w-auto"
       >
-        <div class="flex flex-row justify-end text-sm md:text-lg lg:flex-grow">
+        <div
+          class="flex flex-row justify-end text-sm md:text-base lg:flex-grow"
+        >
           <a
             href="/src/html/index.html"
             class="block mt-4 mr-4 duration-300 lg:inline-block lg:mt-0 hover:text-customBlue"
@@ -71,7 +73,7 @@
           </a>
           <a
             href="/src/html/about.html"
-            class="block mt-4 mr-4 underline duration-300 lg:inline-block lg:mt-0"
+            class="block mt-4 mr-4 underline duration-300 pointer-events-none decoration-customBlue text-customBlue underline-offset-2 lg:inline-block lg:mt-0"
           >
             About
           </a>
@@ -109,7 +111,7 @@
       class="fixed top-0 left-0 z-40 flex items-center justify-center w-0 h-0 duration-700 opacity-0 bg-customBlack closed"
     >
       <div
-        class="flex flex-col space-y-3 text-xl font-light text-center text-customWhite"
+        class="flex flex-col space-y-3 font-light text-center text-customWhite"
       >
         <img src="/src/img/sig-white.png" class="max-h-12" alt="" />
         <a
@@ -145,58 +147,7 @@
       </div>
     </div>
 
-    <section id="aboutSection" class="flex-1 w-full scrollbar">
-      <!-- Header -->
-      <div id="aboutHeader" class="flex justify-center w-full flex-nowrap">
-        <div
-          class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 200 20"
-            class="w-20 h-auto"
-          >
-            <path
-              d="M0 10 C 40 20, 60 20, 100 10"
-              fill="none"
-              stroke="black"
-              stroke-width="2"
-            />
-            <path
-              d="M100 10 C 140 0, 160 0, 200 10"
-              fill="none"
-              stroke="black"
-              stroke-width="2"
-            />
-          </svg>
-        </div>
-
-        <h1 class="ml-2 mr-2 text-3xl font-caveat">About</h1>
-
-        <div
-          class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 200 20"
-            class="w-20 h-auto"
-          >
-            <path
-              d="M0 10 C 40 0, 60 0, 100 10"
-              fill="none"
-              stroke="black"
-              stroke-width="2"
-            />
-            <path
-              d="M100 10 C 140 20, 160 20, 200 10"
-              fill="none"
-              stroke="black"
-              stroke-width="2"
-            />
-          </svg>
-        </div>
-      </div>
-
+    <section id="aboutSection" class="flex-1 w-full">
       <div id="aboutMeContainer" class="flex flex-row flex-wrap h-full">
         <div
           id="aboutMeVideo"
@@ -215,6 +166,56 @@
         </div>
 
         <div id="aboutMeBody" class="pb-20 overflow-y-auto 2xl:w-1/2">
+          <!-- Header -->
+          <div id="aboutHeader" class="flex justify-center w-full flex-nowrap">
+            <div
+              class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 200 20"
+                class="w-20 h-auto"
+              >
+                <path
+                  d="M0 10 C 40 20, 60 20, 100 10"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path
+                  d="M100 10 C 140 0, 160 0, 200 10"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+
+            <h1 class="ml-2 mr-2 text-3xl font-caveat">About</h1>
+
+            <div
+              class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 200 20"
+                class="w-20 h-auto"
+              >
+                <path
+                  d="M0 10 C 40 0, 60 0, 100 10"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path
+                  d="M100 10 C 140 20, 160 20, 200 10"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
           <!-- Section 1 -->
           <div
             class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-container"
@@ -222,7 +223,9 @@
             <div
               class="flex flex-wrap justify-around w-3/4 md:flex md:items-center"
             >
-              <p class="w-full mb-6 text-lg md:w-1/2 md:mb-0 md:mr-4">
+              <p
+                class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mb-0 md:mr-4"
+              >
                 Art has been a monumental part of Nikita’s life since her young
                 adolescence. Nikita is a published Artist based in London and
                 frequently attends fashion shows, illustrating for emerging and
@@ -282,7 +285,9 @@
             <div
               class="flex flex-wrap justify-around w-3/4 md:flex-row-reverse md:flex md:items-center"
             >
-              <p class="w-full mb-6 text-lg md:w-1/2 md:mb-0 md:ml-4 md:mr-0">
+              <p
+                class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mb-0 md:ml-4 md:mr-0"
+              >
                 In 2023, Nikita completed her Art training in figurative
                 painting and abstraction at the Art Academy London, to further
                 refine her style and conformation.
@@ -341,7 +346,7 @@
             <div
               class="flex flex-wrap justify-around w-3/4 md:flex md:items-center"
             >
-              <p class="w-full mb-6 text-lg md:w-1/2 md:mr-4">
+              <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mr-4">
                 Her artistic approach is largely influenced by the likes of
                 Tamara De Lempicka, Georgia O’Keeffe and Damien Hirst. She is
                 fascinated by anatomy and the mystery and movement of abstract
@@ -403,7 +408,7 @@
             <div
               class="flex flex-wrap justify-around w-3/4 md:flex-row-reverse md:flex md:items-center"
             >
-              <p class="w-full mb-6 text-lg md:w-1/2 md:ml-4">
+              <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:ml-4">
                 Channeling her emotions into both her color palette and work,
                 Nikita lends wisdom to the large and expressive brush strokes
                 that act as a reflection of her own personal identity. They
@@ -468,7 +473,7 @@
             <div
               class="flex flex-wrap justify-around w-3/4 md:flex md:items-center"
             >
-              <p class="w-full mb-6 text-lg md:w-1/2 md:mr-4">
+              <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mr-4">
                 Through figurative paintings, Nikita explores the nuances of
                 identity and color. She enjoys forging a connection between
                 female subjects and their surroundings, seeking to explore the
@@ -525,12 +530,12 @@
 
           <!-- Section 6 -->
           <div
-            class="flex justify-around p-6 pb-10 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-container"
+            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-container"
           >
             <div
               class="flex flex-wrap justify-around w-3/4 md:flex-row-reverse md:flex md:items-center"
             >
-              <p class="w-full mb-6 text-lg md:w-1/2 md:ml-4">
+              <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:ml-4">
                 When not working from her home studio in London, Nikita travels
                 frequently in search of inspiration, translating her experiences
                 through vibrant perspectives on art, born through a fascination
@@ -589,7 +594,7 @@
     </section>
 
     <footer
-      class="sticky bottom-0 z-50 flex flex-wrap justify-center flex-shrink pt-3 pb-3 align-middle bg-transparent w-max-screen"
+      class="fixed bottom-0 z-50 flex flex-wrap justify-center flex-shrink w-full pb-3 align-middle bg-transparent"
     >
       <a
         class="transition duration-300 ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
@@ -621,11 +626,10 @@
           document.documentElement.clientHeight ||
           document.body.clientHeight;
         var navbarHeight = document.getElementById("navbar").offsetHeight;
-        var headingHeight = document.getElementById("aboutHeader").offsetHeight;
         document.getElementById("aboutMeVideo").style.height =
-          windowHeight - (navbarHeight + headingHeight) + "px";
+          windowHeight - navbarHeight + "px";
         document.getElementById("aboutMeBody").style.height =
-          windowHeight - (navbarHeight + headingHeight) + "px";
+          windowHeight - navbarHeight + "px";
       }
 
       // Initial adjustment and listen for window resize
