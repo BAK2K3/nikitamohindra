@@ -7,15 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Arimo&family=Assistant&family=Caveat:wght@400;600&family=Yellowtail&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Assistant&family=Caveat:wght@400;600&family=Yellowtail&family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
   <body
-    class="flex flex-col min-h-screen bg-customWhite font-montserrat text-customBlack"
+    class="flex flex-col min-h-screen text-base bg-repeat bg-contain bg-cement-bg font-montserrat text-customBlack"
   >
     <!-- Nav Bar -->
-    <nav class="relative z-50 flex flex-wrap items-center justify-between p-6">
+    <nav
+      id="navbar"
+      class="relative z-50 flex flex-wrap items-center justify-between p-6"
+    >
       <div
         id="navHeading"
         class="flex items-center flex-shrink-0 mr-6 duration-300 text-customBlack"
@@ -59,10 +62,12 @@
       <div
         class="max-h-0 lg:!max-h-none lg:!overflow-hidden w-full block overflow-hidden flex-grow lg:flex lg:items-center transition-all lg:w-auto"
       >
-        <div class="flex flex-row justify-end text-sm md:text-lg lg:flex-grow">
+        <div
+          class="flex flex-row justify-end text-sm md:text-base lg:flex-grow"
+        >
           <a
             href="/src/html/index.html"
-            class="block mt-4 mr-4 underline duration-300 lg:inline-block lg:mt-0"
+            class="block mt-4 mr-4 underline duration-300 pointer-events-none decoration-customBlue text-customBlue underline-offset-2 lg:inline-block lg:mt-0"
           >
             Home
           </a>
@@ -106,7 +111,7 @@
       class="fixed top-0 left-0 z-40 flex items-center justify-center w-0 h-0 duration-700 opacity-0 bg-customBlack closed"
     >
       <div
-        class="flex flex-col space-y-3 text-xl font-light text-center text-customWhite"
+        class="flex flex-col space-y-3 font-light text-center text-customWhite"
       >
         <img src="/src/img/sig-white.png" class="max-h-12" alt="" />
         <a
@@ -142,10 +147,10 @@
       </div>
     </div>
 
-    <section id="homeBanner" class="flex-grow"></section>
+    <section id="homeSection" class="flex-1"></section>
 
     <footer
-      class="sticky bottom-0 z-50 flex flex-wrap justify-center flex-shrink w-screen pt-3 pb-3 align-middle w-max-screen"
+      class="sticky bottom-0 z-50 flex flex-wrap justify-center flex-shrink w-full pb-3 align-middle bg-transparent"
     >
       <a
         class="transition duration-300 ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
@@ -155,7 +160,7 @@
       >
         <svg
           id="instagramIcon"
-          class="w-5 h-5 duration-300 fill-current text-customBlack"
+          class="w-5 h-5 duration-300 fill-customBlack"
           viewBox="0 0 1000 1000"
           xmlns="http://www.w3.org/2000/svg"
         >

@@ -812,12 +812,24 @@ video {
   background-color: transparent;
 }
 
-.fill-customWhite {
-  fill: #FCF2F2;
+.bg-cement-bg {
+  background-image: url('src/img/background.jpeg');
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-repeat {
+  background-repeat: repeat;
 }
 
 .fill-customBlack {
   fill: #1B1C1B;
+}
+
+.fill-customWhite {
+  fill: #FCF2F2;
 }
 
 .stroke-customBlack {
@@ -868,10 +880,6 @@ video {
 
 .font-montserrat {
   font-family: Montserrat, sas-serif;
-}
-
-.font-assistant {
-  font-family: Assistant, sans-serif;
 }
 
 .text-3xl {

@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('src/img/hero-background.jpeg')",
+        "cement-bg": "url('src/img/background.jpeg')",
       },
       fontFamily: {
         yellowtail: ["Yellowtail", "cursive"],
