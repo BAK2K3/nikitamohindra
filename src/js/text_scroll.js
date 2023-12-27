@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const textElements = document.querySelectorAll(
-    ".text-container, .text-divider"
+    ".text-container, .text-divider, .about-image"
   );
 
   const observer = new IntersectionObserver(
