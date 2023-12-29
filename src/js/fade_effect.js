@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const textElements = document.querySelectorAll(
-    ".text-container, .text-divider"
-  );
+  const textElements = document.querySelectorAll(".fade-effect");
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -14,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.4, // Adjust this threshold as needed
+      threshold: 0.4,
     }
   );
 

@@ -120,7 +120,7 @@
           >Home</a
         >
         <a
-          class="underline duration-300 underline-offset-4 hover:text-customBlue"
+          class="underline duration-300 pointer-events-none underline-offset-4 hover:text-customBlue"
           href="/src/html/about.html"
           >About</a
         >
@@ -151,7 +151,7 @@
       <div id="aboutMeContainer" class="flex flex-row flex-wrap h-full">
         <div
           id="aboutMeVideo"
-          class="top-0 justify-center hidden 2xl:w-1/2 2xl:flex 2xl:rounded-md"
+          class="top-0 justify-center hidden transition-opacity duration-500 ease-in-out transform opacity-0 2xl:w-1/2 2xl:flex 2xl:rounded-md fade-effect"
         >
           <video
             autoplay
@@ -169,7 +169,7 @@
           <!-- Header -->
           <div id="aboutHeader" class="flex justify-center w-full flex-nowrap">
             <div
-              class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
+              class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -191,10 +191,14 @@
               </svg>
             </div>
 
-            <h1 class="ml-2 mr-2 text-3xl font-caveat">About</h1>
+            <h1
+              class="ml-2 mr-2 text-3xl transition-opacity duration-500 ease-in-out transform opacity-0 fade-effect font-caveat"
+            >
+              About
+            </h1>
 
             <div
-              class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
+              class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -218,10 +222,10 @@
           </div>
           <!-- Section 1 -->
           <div
-            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-container"
+            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <div
-              class="flex flex-wrap justify-around w-3/4 md:flex md:items-center"
+              class="flex flex-wrap items-center justify-around w-3/4 md:flex"
             >
               <p
                 class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mb-0 md:mr-4"
@@ -245,7 +249,7 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
+            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -280,10 +284,10 @@
           </div>
           <!-- Section 2 -->
           <div
-            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-container"
+            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <div
-              class="flex flex-wrap justify-around w-3/4 md:flex-row-reverse md:flex md:items-center"
+              class="flex flex-wrap items-center justify-around w-3/4 md:flex-row-reverse md:flex"
             >
               <p
                 class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mb-0 md:ml-4 md:mr-0"
@@ -304,7 +308,7 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
+            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -341,10 +345,10 @@
 
           <!-- Section 3 -->
           <div
-            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-container"
+            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <div
-              class="flex flex-wrap justify-around w-3/4 md:flex md:items-center"
+              class="flex flex-wrap items-center justify-around w-3/4 md:flex"
             >
               <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mr-4">
                 Her artistic approach is largely influenced by the likes of
@@ -364,14 +368,13 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
+            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 200 20"
               class="w-20 h-auto"
             >
-              <!-- First Path - Split into two paths -->
               <path
                 d="M0 10 C 40 20, 60 20, 100 10"
                 fill="none"
@@ -384,8 +387,6 @@
                 stroke="black"
                 stroke-width="2"
               />
-
-              <!-- Second Path - Split into two paths -->
               <path
                 d="M0 10 C 160 20, 140 20, 100 10"
                 fill="none"
@@ -403,10 +404,10 @@
 
           <!-- Section 4 -->
           <div
-            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-container"
+            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <div
-              class="flex flex-wrap justify-around w-3/4 md:flex-row-reverse md:flex md:items-center"
+              class="flex flex-wrap items-center justify-around w-3/4 md:flex-row-reverse md:flex"
             >
               <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:ml-4">
                 Channeling her emotions into both her color palette and work,
@@ -429,14 +430,13 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
+            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 200 20"
               class="w-20 h-auto"
             >
-              <!-- First Path - Split into two paths -->
               <path
                 d="M0 10 C 20 20, 80 20, 100 10"
                 fill="none"
@@ -450,7 +450,6 @@
                 stroke-width="2"
               />
 
-              <!-- Second Path - Split into two paths -->
               <path
                 d="M0 10 C 180 0, 120 0, 100 10"
                 fill="none"
@@ -468,10 +467,10 @@
 
           <!-- Section 5 -->
           <div
-            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-container"
+            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <div
-              class="flex flex-wrap justify-around w-3/4 md:flex md:items-center"
+              class="flex flex-wrap items-center justify-around w-3/4 md:flex"
             >
               <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mr-4">
                 Through figurative paintings, Nikita explores the nuances of
@@ -491,14 +490,13 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
+            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 200 20"
               class="w-20 h-auto"
             >
-              <!-- First Path - Split into two paths -->
               <path
                 d="M0 10 C 30 20, 70 20, 100 10"
                 fill="none"
@@ -512,7 +510,6 @@
                 stroke-width="2"
               />
 
-              <!-- Second Path - Split into two paths -->
               <path
                 d="M0 10 C 130 0, 90 0, 100 10"
                 fill="none"
@@ -530,10 +527,10 @@
 
           <!-- Section 6 -->
           <div
-            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-container"
+            class="flex justify-around p-6 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <div
-              class="flex flex-wrap justify-around w-3/4 md:flex-row-reverse md:flex md:items-center"
+              class="flex flex-wrap items-center justify-around w-3/4 md:flex-row-reverse md:flex"
             >
               <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:ml-4">
                 When not working from her home studio in London, Nikita travels
@@ -553,14 +550,13 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 text-divider"
+            class="flex flex-wrap justify-center transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 200 20"
               class="w-20 h-auto"
             >
-              <!-- First Path - Split into two paths -->
               <path
                 d="M0 10 C 40 20, 60 20, 100 10"
                 fill="none"
@@ -574,7 +570,6 @@
                 stroke-width="2"
               />
 
-              <!-- Second Path - Split into two paths -->
               <path
                 d="M0 10 C 40 0, 60 0, 100 10"
                 fill="none"
@@ -617,7 +612,7 @@
 
     <!-- Javascript code -->
     <script src="/src/js/nav.js"></script>
-    <script src="/src/js/text_scroll.js"></script>
+    <script src="/src/js/fade_effect.js"></script>
     <script src="/src/js/container_resize.js"></script>
   </body>
 </html>
