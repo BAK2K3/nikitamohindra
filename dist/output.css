@@ -652,6 +652,18 @@ video {
   max-height: 24rem;
 }
 
+.max-h-\[1\/2\] {
+  max-height: 1/2;
+}
+
+.max-h-\[1\/4\] {
+  max-height: 1/4;
+}
+
+.max-h-\[50vh\] {
+  max-height: 50vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -812,12 +824,12 @@ video {
   background-color: transparent;
 }
 
-.fill-customWhite {
-  fill: #FCF2F2;
-}
-
 .fill-customBlack {
   fill: #1B1C1B;
+}
+
+.fill-customWhite {
+  fill: #FCF2F2;
 }
 
 .stroke-customBlack {
@@ -826,6 +838,11 @@ video {
 
 .stroke-customWhite {
   stroke: #FCF2F2;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-6 {
@@ -850,10 +867,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -868,10 +881,6 @@ video {
 
 .font-montserrat {
   font-family: Montserrat, sas-serif;
-}
-
-.font-assistant {
-  font-family: Assistant, sans-serif;
 }
 
 .text-3xl {
@@ -897,6 +906,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-light {
@@ -1045,18 +1059,9 @@ video {
     flex-direction: row-reverse;
   }
 
-  .md\:items-center {
-    align-items: center;
-  }
-
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
 
