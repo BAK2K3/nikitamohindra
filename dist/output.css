@@ -652,18 +652,6 @@ video {
   max-height: 24rem;
 }
 
-.max-h-\[1\/2\] {
-  max-height: 1/2;
-}
-
-.max-h-\[1\/4\] {
-  max-height: 1/4;
-}
-
-.max-h-\[50vh\] {
-  max-height: 50vh;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -840,11 +828,6 @@ video {
   stroke: #FCF2F2;
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -880,7 +863,16 @@ video {
 }
 
 .font-montserrat {
-  font-family: Montserrat, sas-serif;
+  font-family: Montserrat, sans-serif;
+}
+
+.font-prata {
+  font-family: Prata, sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -901,16 +893,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-light {

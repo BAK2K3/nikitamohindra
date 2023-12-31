@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Arimo&family=Assistant&family=Caveat:wght@400;600&family=Yellowtail&family=Montserrat:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Assistant&family=Caveat:wght@400;600&family=Prata&family=Yellowtail&family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
     <link
@@ -67,7 +67,7 @@
         class="max-h-0 lg:!max-h-none lg:!overflow-hidden w-full block overflow-hidden flex-grow lg:flex lg:items-center transition-all lg:w-auto"
       >
         <div
-          class="flex flex-row justify-end text-sm md:text-base lg:flex-grow"
+          class="flex flex-row justify-end text-sm md:text-base lg:flex-grow font-prata"
         >
           <a
             href="/src/html/index.html"
@@ -129,7 +129,7 @@
           >About</a
         >
         <a
-          class="underline duration-300 pointer-events-none underline-offset-4 hover:text-customBlue"
+          class="underline duration-300 pointer-events-none underline-offset-4 text-customBlue"
           href="/src/html/collections.html"
           >Collections</a
         >
@@ -154,57 +154,11 @@
     <section id="collectionsSection" class="flex-1">
       <!-- Header -->
       <div id="aboutHeader" class="flex justify-center w-full flex-nowrap">
-        <div
-          class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 200 20"
-            class="w-20 h-auto"
-          >
-            <path
-              d="M0 10 C 40 20, 60 20, 100 10"
-              fill="none"
-              stroke="black"
-              stroke-width="2"
-            />
-            <path
-              d="M100 10 C 140 0, 160 0, 200 10"
-              fill="none"
-              stroke="black"
-              stroke-width="2"
-            />
-          </svg>
-        </div>
-
         <h1
-          class="ml-2 mr-2 text-3xl transition-opacity duration-500 ease-in-out transform opacity-0 fade-effect font-caveat"
+          class="ml-2 mr-2 text-3xl transition-opacity duration-500 ease-in-out transform opacity-0 fade-effect font-prata"
         >
           Collections
         </h1>
-
-        <div
-          class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 200 20"
-            class="w-20 h-auto"
-          >
-            <path
-              d="M0 10 C 40 0, 60 0, 100 10"
-              fill="none"
-              stroke="black"
-              stroke-width="2"
-            />
-            <path
-              d="M100 10 C 140 20, 160 20, 200 10"
-              fill="none"
-              stroke="black"
-              stroke-width="2"
-            />
-          </svg>
-        </div>
       </div>
 
       <!-- Section 1 -->
@@ -214,9 +168,55 @@
         class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 flex-nowrap fade-effect"
       >
         <div>
-          <h1 class="ml-2 mr-2 text-2xl text-center font-caveat">
-            Making Waves
-          </h1>
+          <div class="flex justify-center w-full flex-nowrap">
+            <div
+              class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 200 20"
+                class="w-20 h-auto"
+              >
+                <path
+                  d="M0 10 C 40 20, 60 20, 100 10"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path
+                  d="M100 10 C 140 0, 160 0, 200 10"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h1 class="ml-2 mr-2 text-2xl text-center font-caveat">
+              Making Waves
+            </h1>
+            <div
+              class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 200 20"
+                class="w-20 h-auto"
+              >
+                <path
+                  d="M0 10 C 40 0, 60 0, 100 10"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path
+                  d="M100 10 C 140 20, 160 20, 200 10"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
 
           <div class="splide" aria-label="Splide Basic HTML Example">
             <div class="splide__track">

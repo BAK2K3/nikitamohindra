@@ -12,7 +12,8 @@ module.exports = {
         caveat: ["Caveat", "cursive"],
         arimo: ["Arimo", "sans-serif"],
         assistant: ["Assistant", "sans-serif"],
-        montserrat: ["Montserrat", "sas-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        prata: ["Prata", "sans-serif"],
       },
     },
     colors: {
