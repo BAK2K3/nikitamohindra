@@ -14,6 +14,13 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.css"
+      integrity="sha512-eG8C/4QWvW9MQKJNw2Xzr0KW7IcfBSxljko82RuSs613uOAg/jHEeuez4dfFgto1u6SRI/nXmTr9YPCjs1ozBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body
     class="flex flex-col min-h-screen text-base bg-customWhite font-montserrat text-customBlack"
@@ -167,7 +174,7 @@
         id="makingWavesContainer"
         class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 flex-nowrap fade-effect"
       >
-        <div>
+        <div class="flex flex-wrap justify-center w-full">
           <div class="flex justify-center w-full flex-nowrap">
             <div
               class="justify-center w-20 transition-opacity duration-500 ease-in-out transform translate-y-4 opacity-0 fade-effect"
@@ -218,25 +225,29 @@
             </div>
           </div>
 
-          <div class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <img src="/src/img/collections/waves1.jpeg" alt="" />
-                </li>
-                <li class="splide__slide">
-                  <img src="/src/img/collections/waves2.jpeg" alt="" />
-                </li>
-                <li class="splide__slide">
-                  <img src="/src/img/collections/waves3.jpeg" alt="" />
-                </li>
-                <li class="splide__slide">
-                  <img src="/src/img/collections/waves4.jpeg" alt="" />
-                </li>
-                <li class="splide__slide">
-                  <img src="/src/img/collections/waves5.jpeg" alt="" />
-                </li>
-              </ul>
+          <div class="flex items-center justify-center w-full md:w-1/2 group">
+            <ul id="makingWavesImages">
+              <li>
+                <img
+                  class="relative transition duration-300 group-hover:opacity-50"
+                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038731/Making%20Waves/Making_Waves_I_-_Parasols_in_Positano_ljcetn.jpg"
+                  alt="Making Waves I - Parasols in Positano"
+                  title="Making Waves I - Parasols in Positano"
+                />
+              </li>
+              <li>
+                <img
+                  class="hidden"
+                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038731/Making%20Waves/Making_Waves_I_Parasols_in_Positano_-_Interior_pt1vil.jpg"
+                  alt="Making Waves I - Parasols in Positano (Interior)"
+                />
+              </li>
+            </ul>
+            <div
+              id="makingWavesHero"
+              class="absolute z-10 items-center justify-center block text-2xl font-semibold text-white duration-300 opacity-0 md:text-4xl w-100inset-0 group-hover:opacity-100"
+            >
+              View Gallery
             </div>
           </div>
         </div>
@@ -348,5 +359,12 @@
     <script src="/src/js/fade_effect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="/src/js/splide.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"
+      integrity="sha512-EC3CQ+2OkM+ZKsM1dbFAB6OGEPKRxi6EDRnZW9ys8LghQRAq6cXPUgXCCujmDrXdodGXX9bqaaCRtwj4h4wgSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/src/js/viewer.js"></script>
   </body>
 </html>
