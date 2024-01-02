@@ -19,9 +19,45 @@ document.addEventListener("DOMContentLoaded", function () {
     gallerySettings
   );
 
+  const ugbadGallery = new Viewer(
+    document.getElementById("ugbadImages"),
+    gallerySettings
+  );
+
+  const cosmosGallery = new Viewer(
+    document.getElementById("cosmosImages"),
+    gallerySettings
+  );
+
+  const londonGallery = new Viewer(
+    document.getElementById("londonImages"),
+    gallerySettings
+  );
+
+  const womanGallery = new Viewer(
+    document.getElementById("womanImages"),
+    gallerySettings
+  );
+
   document
     .getElementById("makingWavesHero")
     .addEventListener("click", function () {
       makingWavesGallery.show();
     });
+
+  document.getElementById("ugbadHero").addEventListener("click", function () {
+    ugbadGallery.show();
+  });
+
+  document.getElementById("cosmosHero").addEventListener("click", function () {
+    cosmosGallery.show();
+  });
+
+  document.getElementById("londonHero").addEventListener("click", function () {
+    londonGallery.show();
+  });
+
+  document.getElementById("womanHero").addEventListener("click", function () {
+    womanGallery.show();
+  });
 });
