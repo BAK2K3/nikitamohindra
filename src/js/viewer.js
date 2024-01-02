@@ -39,6 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
     gallerySettings
   );
 
+  const legacyGallery = new Viewer(
+    document.getElementById("legacyImages"),
+    gallerySettings
+  );
+
   document
     .getElementById("makingWavesHero")
     .addEventListener("click", function () {
@@ -59,5 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("womanHero").addEventListener("click", function () {
     womanGallery.show();
+  });
+
+  document.getElementById("legacyHero").addEventListener("click", function () {
+    legacyGallery.show();
   });
 });

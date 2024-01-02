@@ -14,6 +14,7 @@ module.exports = {
         assistant: ["Assistant", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         prata: ["Prata", "sans-serif"],
+        notoSerifDisplay: ["Noto Serif Display", "sans-serif"],
       },
     },
     colors: {
