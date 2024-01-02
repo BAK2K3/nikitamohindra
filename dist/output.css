@@ -840,12 +840,12 @@ video {
   stroke: #FCF2F2;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-3 {
@@ -1008,6 +1008,8 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*  Custom Title for Viewer */
+
 .viewer-title {
   font-size: 1rem !important;
   font-weight: 500 !important;
@@ -1017,6 +1019,13 @@ video {
   padding: 4px !important;
   word-wrap: break-word !important;
   white-space: wrap !important;
+}
+
+/* Prevent viewer from moving page */
+
+body.viewer-open {
+  padding: 0 !important;
+  overflow: auto !important;
 }
 
 .hover\:-translate-y-1:hover {
@@ -1090,14 +1099,14 @@ video {
     line-height: 2rem;
   }
 
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 

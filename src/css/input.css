@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+/*  Custom Title for Viewer */
 .viewer-title {
     font-size: 1rem !important;
     font-weight: 500 !important;
@@ -12,4 +13,10 @@
     padding: 4px !important;
     word-wrap: break-word !important;
     white-space: wrap !important;
+}
+
+/* Prevent viewer from moving page */
+body.viewer-open {
+    padding: 0 !important;
+    overflow: auto !important;
 }
