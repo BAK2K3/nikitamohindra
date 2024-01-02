@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.viewer-title {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    opacity: 100% !important;
+    background-color: #1B1C1B;
+    color: #FCF2F2 !important;
+    padding: 4px !important;
+    word-wrap: break-word !important;
+    white-space: wrap !important;
+}
