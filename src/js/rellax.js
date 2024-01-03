@@ -3,6 +3,7 @@ window.addEventListener("load", () => {
 
   if (relax.length > 0) {
     const rellax = new Rellax(".rellax");
+
     console.log(rellax);
   }
 });
