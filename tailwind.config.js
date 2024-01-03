@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('src/img/hero-background.jpeg')",
+        LOTO: "url('https://res.cloudinary.com/bak2k3/image/upload/v1704209608/Legacy/The_Legacy_of_the_Ocean_I_-_Cap_d_Antibes_80x60cm_vm17zd.jpg')",
       },
       fontFamily: {
         caveat: ["Caveat", "cursive"],

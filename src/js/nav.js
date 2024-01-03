@@ -4,6 +4,7 @@ let openMenuButton = document.getElementById("openIcon");
 let navHeading = document.getElementById("navHeading");
 let hamburgerMenu = document.getElementById("hamburgerMenu");
 let instagramIcon = document.getElementById("instagramIcon");
+let navBar = document.getElementById("navbar");
 
 function toggleMenu() {
   if (menu.classList.contains("closed")) {
@@ -27,6 +28,8 @@ function toggleMenu() {
     );
     instagramIcon.classList.remove("fill-customBlack");
     instagramIcon.classList.add("fill-customWhite");
+    navBar.classList.remove("bg-customWhite");
+    navBar.classList.add("bg-transparent");
   } else {
     menu.classList.remove("w-screen", "h-screen", "opacity-95", "open");
     menu.classList.add("w-0", "h-0", "opacity-0", "closed");
@@ -48,5 +51,7 @@ function toggleMenu() {
     );
     instagramIcon.classList.remove("fill-customWhite");
     instagramIcon.classList.add("fill-customBlack");
+    navBar.classList.remove("bg-transparent");
+    navBar.classList.add("bg-customWhite");
   }
 }

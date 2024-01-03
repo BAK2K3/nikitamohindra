@@ -37,3 +37,7 @@ body.viewer-open {
     padding: 0 !important;
     overflow: auto !important;
 }
+
+::-webkit-scrollbar { 
+display: none; 
+}
