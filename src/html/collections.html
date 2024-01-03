@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Arimo&family=Assistant&family=Caveat:wght@400;600&family=Prata&family=Yellowtail&family=Noto+Serif+Display:wght@300&family=Montserrat:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?&family=Cormorant+Garamond:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,19 +23,22 @@
     />
   </head>
   <body
-    class="flex flex-col min-h-screen text-base bg-customWhite font-montserrat text-customBlack"
+    class="flex flex-col flex-wrap justify-center min-h-screen text-base bg-customWhite text-customBlack"
   >
     <!-- Nav Bar -->
     <nav
       id="navbar"
-      class="relative z-50 flex flex-wrap items-center justify-between p-6"
+      class="relative z-50 flex flex-row flex-wrap items-center justify-between w-screen p-6 lg:flex-col"
     >
       <div
         id="navHeading"
         class="flex items-center flex-shrink-0 mr-6 duration-300 text-customBlack"
       >
         <a href="/src/html/index.html"
-          ><span class="ml-4 text-4xl font-caveat">Nikita Mohindra</span></a
+          ><span
+            class="text-4xl font-medium tracking-tighter uppercase font-carmorantGaramond"
+            >Nikita Mohindra</span
+          ></a
         >
       </div>
       <!-- Open Close -->
@@ -74,7 +77,7 @@
         class="max-h-0 lg:!max-h-none lg:!overflow-hidden w-full block overflow-hidden flex-grow lg:flex lg:items-center transition-all lg:w-auto"
       >
         <div
-          class="flex flex-row justify-end text-sm md:text-base lg:flex-grow font-prata"
+          class="flex flex-row justify-end text-xl lg:flex-grow font-carmorantGaramond"
         >
           <a
             href="/src/html/index.html"
@@ -107,10 +110,10 @@
     <!-- Overlay -->
     <div
       id="menu"
-      class="fixed top-0 left-0 z-40 flex items-center justify-center w-0 h-0 duration-700 opacity-0 bg-customBlack closed"
+      class="fixed top-0 left-0 z-40 flex items-center justify-center w-0 h-0 text-xl duration-700 opacity-0 bg-customBlack closed"
     >
       <div
-        class="flex flex-col space-y-3 font-light text-center text-customWhite"
+        class="flex flex-col space-y-3 font-light text-center text-customWhite font-carmorantGaramond"
       >
         <img src="/src/img/sig-white.png" class="max-h-12" alt="" />
         <a
@@ -136,724 +139,726 @@
       </div>
     </div>
 
-    <section
-      id="collectionsSection"
-      class="flex flex-wrap justify-center p-4 md:p2"
-    >
-      <!-- Header -->
-      <div id="collectionsHeader" class="flex justify-center w-full">
-        <h1
-          class="ml-2 mr-2 text-3xl transition-opacity duration-500 ease-in-out transform opacity-0 fade-effect font-prata"
+    <div id="collectionSection" class="flex justify-center flex-1">
+      <div
+        id="collectionsSection"
+        class="flex flex-row flex-wrap justify-center flex-1 p-4 md:p2 w-100 xl:w-4/5"
+      >
+        <!-- Header -->
+        <div id="collectionsHeader" class="flex justify-center w-full">
+          <h1
+            class="ml-2 mr-2 text-3xl underline transition-opacity duration-500 ease-in-out transform opacity-0 lg:text-4xl underline-offset-4 decoration-1 fade-effect"
+          >
+            Collections
+          </h1>
+        </div>
+
+        <!-- Section 1 - Legacy -->
+
+        <div
+          id="legacyContainer"
+          class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
         >
-          Collections
-        </h1>
-      </div>
-
-      <!-- Section 1 - Legacy -->
-
-      <div
-        id="legacyContainer"
-        class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
-      >
-        <div class="flex flex-wrap content-center justify-center w-full">
-          <!-- Title -->
-          <div class="w-full p-6 text-center">
-            <h2 class="ml-2 mr-2 text-2xl text-center font-caveat md:text-3xl">
-              The Legacy of the Ocean
-            </h2>
-          </div>
-          <!-- Viewer -->
-          <div
-            class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
-          >
-            <ul id="legacyImages">
-              <li>
-                <img
-                  class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704209608/Legacy/The_Legacy_of_the_Ocean_I_-_Cap_d_Antibes_80x60cm_vm17zd.jpg"
-                  alt="The Legacy Of The Ocean I - Cap d'Antibes - 80x60cm"
-                  title="The Legacy Of The Ocean I - Cap d'Antibes - 80x60cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704209613/Legacy/The_Legacy_of_the_Ocean_I_-_Cap_d_Antibes_80x60cm_Interior_d8zp8q.jpg"
-                  alt="The Legacy Of The Ocean I - Cap d'Antibes - 80x60cm - Interior"
-                  title="The Legacy Of The Ocean I - Cap d'Antibes - 80x60cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704209603/Legacy/The_Legacy_of_the_Ocean_II_-_Fishing_Boats_On_The_Antiguan_Shore_80x60cm_blyxnn.jpg"
-                  alt="The Legacy Of The Ocean II - Fishing Boats On The Antiguan Shore - 80x60cm"
-                  title="The Legacy Of The Ocean II - Fishing Boats On The Antiguan Shore - 80x60cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704209605/Legacy/The_Legacy_of_the_Ocean_II_-_Fishing_Boats_On_The_Antiguan_Shore_80x60cm_Interior_gimltc.jpg"
-                  alt="The Legacy Of The Ocean II - Fishing Boats On The Antiguan Shore - 80x60cm - Interior"
-                  title="The Legacy Of The Ocean II - Fishing Boats On The Antiguan Shore - 80x60cm - Interior"
-                />
-              </li>
-            </ul>
+          <div class="flex flex-wrap content-center justify-center w-full">
+            <!-- Title -->
+            <div class="w-full p-6 text-center">
+              <h2 class="ml-2 mr-2 text-2xl text-center lg:text-3xl">
+                The Legacy of the Ocean
+              </h2>
+            </div>
+            <!-- Viewer -->
             <div
-              id="legacyHero"
-              class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
+              class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
             >
-              View Gallery
+              <ul id="legacyImages">
+                <li>
+                  <img
+                    class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704209608/Legacy/The_Legacy_of_the_Ocean_I_-_Cap_d_Antibes_80x60cm_vm17zd.jpg"
+                    alt="The Legacy Of The Ocean I - Cap d'Antibes - 80x60cm"
+                    title="The Legacy Of The Ocean I - Cap d'Antibes - 80x60cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704209613/Legacy/The_Legacy_of_the_Ocean_I_-_Cap_d_Antibes_80x60cm_Interior_d8zp8q.jpg"
+                    alt="The Legacy Of The Ocean I - Cap d'Antibes - 80x60cm - Interior"
+                    title="The Legacy Of The Ocean I - Cap d'Antibes - 80x60cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704209603/Legacy/The_Legacy_of_the_Ocean_II_-_Fishing_Boats_On_The_Antiguan_Shore_80x60cm_blyxnn.jpg"
+                    alt="The Legacy Of The Ocean II - Fishing Boats On The Antiguan Shore - 80x60cm"
+                    title="The Legacy Of The Ocean II - Fishing Boats On The Antiguan Shore - 80x60cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704209605/Legacy/The_Legacy_of_the_Ocean_II_-_Fishing_Boats_On_The_Antiguan_Shore_80x60cm_Interior_gimltc.jpg"
+                    alt="The Legacy Of The Ocean II - Fishing Boats On The Antiguan Shore - 80x60cm - Interior"
+                    title="The Legacy Of The Ocean II - Fishing Boats On The Antiguan Shore - 80x60cm - Interior"
+                  />
+                </li>
+              </ul>
+              <div
+                id="legacyHero"
+                class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
+              >
+                View Gallery
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2 - Making Waves -->
+
+        <div
+          id="makingWavesContainer"
+          class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
+        >
+          <div class="flex flex-wrap content-center justify-center w-full">
+            <!-- Title -->
+            <div class="w-full p-6 text-center">
+              <h2 class="ml-2 mr-2 text-2xl text-center lg:text-3xl">
+                Making Waves - The Way of Water
+              </h2>
+            </div>
+
+            <!-- Viewer -->
+            <div
+              class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
+            >
+              <ul id="makingWavesImages">
+                <li>
+                  <img
+                    class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038731/Making%20Waves/Making_Waves_I_-_Parasols_in_Positano_ljcetn.jpg"
+                    alt="Making Waves I - Parasols in Positano - 60x80cm"
+                    title="Making Waves I - Parasols in Positano - 60x80cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038731/Making%20Waves/Making_Waves_I_Parasols_in_Positano_-_Interior_pt1vil.jpg"
+                    alt="Making Waves I - Parasols in Positano - 60x80cm - Interior"
+                    title="Making Waves I - Parasols in Positano - 60x80cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038730/Making%20Waves/Making_Waves_II_-_Bagni_di_Tiberio_80x60cm__ls8iu5.jpg"
+                    alt="Making Waves II - Bagni di Tiberio - 80x60cm"
+                    title="Making Waves II - Bagni di Tiberio - 80x60cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038731/Making%20Waves/Making_Waves_II_-_Bagni_di_Tiberio_80x60cm_-_Interior_lfdjgt.jpg"
+                    alt="Making Waves II - Bagni di Tiberio - 80x60cm - Interior"
+                    title="Making Waves II - Bagni di Tiberio - 80x60cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038731/Making%20Waves/Making_Waves_II_-_Bagni_di_Tiberio_80x60cm_Interior_2_c2kfnr.jpg"
+                    alt="Making Waves II - Bagni di Tiberio - 80x60cm - Interior 2"
+                    title=" Making Waves II - Bagni di Tiberio - 80x60cm - Interior 2"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038730/Making%20Waves/Making_Waves_III_-_Capri_Coastline_80x60cm_xransx.jpg"
+                    alt="Making Waves III - Capri Coastline - 80x60cm"
+                    title="Making Waves III - Capri Coastline - 80x60cm"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038730/Making%20Waves/Making_Waves_III_-_Capri_Coastline_80x60cm_-_Interior_prjrdv.jpg"
+                    alt="Making Waves III - Capri Coastline - 80x60cm - Interior"
+                    title="Making Waves III - Capri Coastline - 80x60cm - Interior"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038730/Making%20Waves/Making_Waves_IV_-_Jude_Takes_The_Tide_30x30cm_kawo8o.jpg"
+                    alt="Making Waves IV - Jude Takes The Tide - 30x30cm"
+                    title="Making Waves IV - Jude Takes The Tide - 30x30cm"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038730/Making%20Waves/Making_Waves_IV_-_Jude_Takes_The_Tide_-_30x30cm_-_Interior_m96ljh.jpg"
+                    alt="Making Waves IV - Jude Takes The Tide - 30x30cm - Interior"
+                    title="Making Waves IV - Jude Takes The Tide - 30x30cm - Interior"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_V_-_Surfer_Girl_100x150cm_bouczc.jpg"
+                    alt="Making Waves V - Sufer Girl - 100x150cm"
+                    title="Making Waves V - Sufer Girl - 100x150cm"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_V_-_Surfer_Girl_100x150cm_-_Interior_yvrzey.jpg"
+                    alt="Making Waves V - Sufer Girl - 100x150cm - Interior"
+                    title="Making Waves V - Sufer Girl - 100x150cm - Interior"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_V_-_Surfer_Girl_100x150cm_-_Interior_2_b48vii.jpg"
+                    alt="Making Waves V - Sufer Girl - 100x150cm - Interior 2"
+                    title="Making Waves V - Sufer Girl - 100x150cm - Interior 2"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_VI_-_Swimmin_By_The_Rocks_Of_The_Bay_-_30x30cm_jnogw5.jpg"
+                    alt="Making Waves VI - Swimmin' By The Rocks Of The Bay - 30x30cm"
+                    title="Making Waves VI - Swimmin' By The Rocks Of The Bay - 30x30cm"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_VI_-_Swimmin_By_The_Rocks_Of_The_Bay_-_30x30cm_-_Interior_nbjxno.jpg"
+                    alt="Making Waves VI - Swimmin' By The Rocks Of The Bay - 30x30cm - Interior"
+                    title="Making Waves VI - Swimmin' By The Rocks Of The Bay - 30x30cm - Interior"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Waves_Waves_VII_-_Frolicking_Free_-_80x60cm_pd5v6g.jpg"
+                    alt="Making Waves VII - Frolicking Free - 80x60cm"
+                    title="Making Waves VII - Frolicking Free - 80x60cm"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Waves_Waves_VII_-_Frolicking_Free_-_80x60cm_-_Interior_bz6ec3.jpg"
+                    alt="Making Waves VII - Frolicking Free - 80x60cm - Interior"
+                    title="Making Waves VII - Frolicking Free - 80x60cm - Interior"
+                  />
+                </li>
+
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_VIII_-_Sicilian_Lemons_-_80x60cm_xocpmg.jpg"
+                    alt="Making Waves VIII - Sicilian Lemons - 80x60cm"
+                    title="Making Waves VIII - Sicilian Lemons - 80x60cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_VIII_-_Sicilian_Lemons_-_80x60cm_-_Interior_ty625m.jpg"
+                    alt="Making Waves VIII - Sicilian Lemons - 80x60cm - Interior"
+                    title="Making Waves VIII - Sicilian Lemons - 80x60cm - Interior"
+                  />
+                </li>
+              </ul>
+              <div
+                id="makingWavesHero"
+                class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
+              >
+                View Gallery
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3 - Cosmos -->
+
+        <div
+          id="cosmosContainer"
+          class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
+        >
+          <div class="flex flex-wrap content-center justify-center w-full">
+            <!-- Title -->
+            <div class="w-full p-6 text-center">
+              <h2 class="ml-2 mr-2 text-2xl text-center lg:text-3xl">
+                Cosmos In Colour (formerly Vitality)
+              </h2>
+            </div>
+            <!-- Viewer -->
+            <div
+              class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
+            >
+              <ul id="cosmosImages">
+                <li>
+                  <img
+                    class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704207040/Vitality/AMAZONITE_100x100cm_iopeko.jpg"
+                    alt="Cosmos In Colour - AMAZONITE - 100x100cm"
+                    title="Cosmos In Colour - AMAZONITE - 100x100cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Vitality/AMAZONITE_100x100cm_Interior_yc7bn8.jpg"
+                    alt="Cosmos In Colour - AMAZONITE - 100x100cm - Interior"
+                    title="Cosmos In Colour - AMAZONITE - 100x100cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957936/Vitality/UNITY_100x100cm_mkepyi.jpg"
+                    alt="Cosmos In Colour - UNITY - 100x100cm"
+                    title="Cosmos In Colour - UNITY - 100x100cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957936/Vitality/UNITY_100x100cm_Interior_epapf6.jpg"
+                    alt="Cosmos In Colour - UNITY - 100x100cm - Interior"
+                    title="Cosmos In Colour - UNITY - 100x100cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957936/Vitality/UNITY_100x100cm_Interior_II_d43qvk.jpg"
+                    alt="Cosmos In Colour - UNITY - 100x100cm - Initerior 2"
+                    title="Cosmos In Colour - UNITY - 100x100cm - Interior 2"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Vitality/ORGASM_100x100cm_dxaljs.jpg"
+                    alt="Cosmos In Colour - ORGASM - 100x100cm"
+                    title="Cosmos In Colour - ORGASM - 100x100cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957934/Vitality/ORGASM_100x100cm_Interior_eabmw9.jpg"
+                    alt="Cosmos In Colour - ORGASM - 100x100cm - Interior"
+                    title="Cosmos In Colour - ORGASM - 100x100cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957934/Vitality/ORGASM_100x100cm_Interior_II_silzas.jpg"
+                    alt="Cosmos In Colour - ORGASM - 100x100cm - Interior 2"
+                    title="Cosmos In Colour - ORGASM - 100x100cm - Interior 2"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1704203409/Vitality/EMERALD_50x100cm_sfbrr6.jpg"
+                    alt="Cosmos In Colour - EMERALD - 50x100cm"
+                    title="Cosmos In Colour - EMERALD - 50x100cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Vitality/Emerald_50x100cm_Interior__dfw2ib.jpg"
+                    alt="Cosmos In Colour - EMERALD - 50x100cm - Interior"
+                    title="Cosmos In Colour - EMERALD - 50x100cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Vitality/Emerald_50x100cm_Interior_II_bbhbl5.jpg"
+                    alt="Cosmos In Colour - EMERALD - 50x100cm - Interior 2"
+                    title="Cosmos In Colour - EMERALD - 50x100cm - Interior 2"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Vitality/EMERALD_50x100cm_Interior_III_r4sati.jpg"
+                    alt="Cosmos In Colour - EMERALD - 50x100cm - Interior 3"
+                    title="Cosmos In Colour - EMERALD - 50x100cm - Interor 3"
+                  />
+                </li>
+              </ul>
+              <div
+                id="cosmosHero"
+                class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
+              >
+                View Gallery
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4 - Ugbad -->
+        <div
+          id="ugbadAbdiContainer"
+          class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
+        >
+          <div class="flex flex-wrap content-center justify-center w-full">
+            <!-- Title -->
+            <div class="w-full p-6 text-center">
+              <h2 class="ml-2 mr-2 text-2xl text-center lg:text-3xl">
+                Ugbad Abdi x British Vogue x Givenchy
+              </h2>
+            </div>
+            <!-- Viewer -->
+            <div
+              class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
+            >
+              <ul id="ugbadImages">
+                <li>
+                  <img
+                    class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Ugbad/UGBAD_ABDI_X_BRITISH_VOGUE_X_GIVENCHY_II_80x60cm_shgp75.jpg"
+                    alt="Ugbad Abdi x British Vogue x Givenchy II - 80x60cm"
+                    title="Ugbad Abdi x British Vogue x Givenchy II - 80x60cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Ugbad/UGBAD_ABDI_X_BRITISH_VOGUE_X_GIVENCHY_II_Interior_mkpfq9.jpg"
+                    alt="Ugbad Abdi x British Vogue x Givenchy II - 80x60cm - Interior"
+                    title="Ugbad Abdi x British Vogue x Givenchy II - 80x60cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Ugbad/UGBAD_ABDI_X_BRITISH_VOGUE_X_GIVENCHY_I_80x60cm_qfiqth.jpg"
+                    alt="Ugbad Abdi x British Vogue x Givenchy I - 80x60cm"
+                    title="Ugbad Abdi x British Vogue x Givenchy I - 80x60cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Ugbad/UGBAD_ABDI_X_BRITISH_VOGUE_X_GIVENCHY_I_Interior_vjwnwc.jpg"
+                    alt="Ugbad Abdi x British Vogue x Givenchy I - 80x60cm - Interior"
+                    title="Ugbad Abdi x British Vogue x Givenchy I - 80x60cm - Interior"
+                  />
+                </li>
+              </ul>
+              <div
+                id="ugbadHero"
+                class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
+              >
+                View Gallery
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 5 - She Is Woman -->
+
+        <div
+          id="womanContainer"
+          class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
+        >
+          <div class="flex flex-wrap content-center justify-center w-full">
+            <!-- Title -->
+            <div class="w-full p-6 text-center">
+              <h2 class="ml-2 mr-2 text-2xl text-center lg:text-3xl">
+                She is Woman
+              </h2>
+            </div>
+            <!-- Viewer -->
+            <div
+              class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
+            >
+              <ul id="womanImages">
+                <li>
+                  <img
+                    class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/BLACK_BEAUTY_50x50cm_ju3y7w.jpg"
+                    alt="She Is Woman - Black Beauty - 50x50cm"
+                    title="She Is Woman - Black Beauty - 50x50cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/BLACK_BEAUTY_50x50cm_Interior_v2utuc.jpg"
+                    alt="She Is Woman - Black Beauty - 50x50cm - Interior"
+                    title="She Is Woman - Black Beauty - 50x50cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/FREIDA_IN_THE_FLESH_60x80cm_hmfwna.jpg"
+                    alt="She Is Woman - Freida In The Flesh - 60x80cm"
+                    title="She Is Woman - Freida In The Flesh - 60x80cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/Freida_in_the_Flesh_60x80cm_Interior_obouqn.jpg"
+                    alt="She Is Woman - Freida In The Flesh - 60x80cm - Interior"
+                    title="She Is Woman - Freida In The Flesh - 60x80cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957930/SheIsWoman/Mon_Cherie_50x50cm_y64avh.jpg"
+                    alt="She Is Woman - Mon Cherie - 50x50cm"
+                    title="She Is Woman - Mon Cherie - 50x50cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957930/SheIsWoman/MON_CHERIE_50x50cm_Interior_li8hqo.jpg"
+                    alt="She Is Woman - Mon Cherie - 50x50cm - Interior"
+                    title="She Is Woman - Mon Cherie - 50x50cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/CITY_GIRL_50x50cm_m2xwfk.jpg"
+                    alt="She Is Woman - City Girl - 50x50cm"
+                    title="She Is Woman - City Girl - 50x50cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/CITY_GIRL_50x50cm_Interior_ov8hvl.jpg"
+                    alt="She Is Woman - City Girl - 50x50cm - Interior"
+                    title="She Is Woman - City Girl - 50x50cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/SheIsWoman/Beatrix_in_Blue_100x100cm_vhvus9.jpg"
+                    alt="She Is Woman - Beatrix In Blue - 100x100cm"
+                    title="She Is Woman - Beatrix In Blue - 100x100cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/Beatrix_in_Blue_100x100cm_Interior_j4zk9k.jpg"
+                    alt="She Is Woman - Beatrix In Blue - 100x100cm - Interior"
+                    title="She Is Woman - Beatrix In Blue - 100x100cm - Interior"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/SheIsWoman/She_s_Demure_40x50cm_webu2a.jpg"
+                    alt="She Is Woman - She's Demure - 40x50cm"
+                    title="She Is Woman - She's Demure - 40x50cm"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/LUNA_40X50cm_Interior_svptcj.jpg"
+                    alt="She Is Woman - Luna - 40x50cm - Interior"
+                    title="She Is Woman - Luna - 40x50cm - Interior"
+                  />
+                </li>
+              </ul>
+              <div
+                id="womanHero"
+                class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
+              >
+                View Gallery
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 6 - London -->
+
+        <div
+          id="londonContainer"
+          class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
+        >
+          <div class="flex flex-wrap content-center justify-center w-full">
+            <!-- Title -->
+            <div class="w-full p-6 text-center">
+              <h2 class="ml-2 mr-2 text-2xl text-center lg:text-3xl">
+                London Fashion Week
+              </h2>
+            </div>
+            <!-- Viewer -->
+            <div
+              class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
+            >
+              <ul id="londonImages">
+                <li>
+                  <img
+                    class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957932/LFW/BTS_X_LFW_AW_23_wmdm6h.jpg"
+                    alt="BTS x LFW AW 23 I"
+                    title="BTS x LFW AW 23 I"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/BTS_X_LFW_AW_23_II_tsz3bm.jpg"
+                    alt="BTS x LFW AW 23 II"
+                    title="BTS x LFW AW 23 II"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/BTS_X_LFW_AW_23_III_mmhmy9.jpg"
+                    alt="BTS x LFW AW 23 III"
+                    title="BTS x LFW AW 23 III"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/MTG_x_LFW_AW_23_zannxw.jpg"
+                    alt="MTG x LFW AW 23 I"
+                    title="MTG x LFW AW 23 I"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/MTG_X_LFW_AW_23_II_olvj12.jpg"
+                    alt="MTG x LFW AW 23 II"
+                    title="MTG x LFW AW 23 II"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/LFW/MTG_X_LFW_AW_23_III_bqm6we.jpg"
+                    alt="MTG x LFW AW 23 III"
+                    title="MTG x LFW AW 23 III"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/LFW/SHUXUAN_G_X_LFW_AW_23_i26f0x.jpg"
+                    alt="Shuxuan G x LFW AW 23 I"
+                    title="Shuxuan G x LFW AW 23 I"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/LFW/Shuxuan_G_x_LFW_SS_23_vkqan0.jpg"
+                    alt="Shuxuan G x LFW SS 23 I"
+                    title="Shuxuan G x LFW AW 23 I"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/LFW/SHUXUAN_G_X_LFW_SS_23_II_ihtbqq.jpg"
+                    alt="Shuxuan G x LFW SS 23 II"
+                    title="Shuxuan G x LFW AW 23 II"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/LFW/SHUXUAN_G_X_LFW_SS_23_III_pwxszr.jpg"
+                    alt="Shuxuan G x LFW SS 23 III"
+                    title="Shuxuan G x LFW AW 23 III"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/Epica_Jewellery_X_LFW_SS_23_abb2no.jpg"
+                    alt="Epica Jewellery x LFW SS 23 I"
+                    title="Epica Jewellery x LFW SS 23 I"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/Epica_Jewellery_X_LFW_SS_23_II_y8ggks.jpg"
+                    alt="Epica Jewellery x LFW SS 23 II"
+                    title="Epica Jewellery x LFW SS 23 II"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957926/LFW/Epica_Jewellery_X_LFW_SS_23_III_rgym2f.jpg"
+                    alt="Epica Jewellery x LFW SS 23 III"
+                    title="Epica Jewellery x LFW SS 23 III"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/British_Vogue_SEP_21_dyuskh.jpg"
+                    alt="British Vogue x LFW Sept 21"
+                    title="British Vogue x LFW Sept 21"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="hidden"
+                    src="https://res.cloudinary.com/bak2k3/image/upload/v1703957926/LFW/British_Vogue_AUG_20_lx1iez.jpg"
+                    alt="British Vogue x LFW Aug 20"
+                    title="British Vogue x LFW Aug 20"
+                  />
+                </li>
+              </ul>
+              <div
+                id="londonHero"
+                class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
+              >
+                View Gallery
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Section 2 - Making Waves -->
-
-      <div
-        id="makingWavesContainer"
-        class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
-      >
-        <div class="flex flex-wrap content-center justify-center w-full">
-          <!-- Title -->
-          <div class="w-full p-6 text-center">
-            <h2 class="ml-2 mr-2 text-2xl text-center font-caveat md:text-3xl">
-              Making Waves - The Way of Water
-            </h2>
-          </div>
-
-          <!-- Viewer -->
-          <div
-            class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
-          >
-            <ul id="makingWavesImages">
-              <li>
-                <img
-                  class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038731/Making%20Waves/Making_Waves_I_-_Parasols_in_Positano_ljcetn.jpg"
-                  alt="Making Waves I - Parasols in Positano - 60x80cm"
-                  title="Making Waves I - Parasols in Positano - 60x80cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038731/Making%20Waves/Making_Waves_I_Parasols_in_Positano_-_Interior_pt1vil.jpg"
-                  alt="Making Waves I - Parasols in Positano - 60x80cm - Interior"
-                  title="Making Waves I - Parasols in Positano - 60x80cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038730/Making%20Waves/Making_Waves_II_-_Bagni_di_Tiberio_80x60cm__ls8iu5.jpg"
-                  alt="Making Waves II - Bagni di Tiberio - 80x60cm"
-                  title="Making Waves II - Bagni di Tiberio - 80x60cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038731/Making%20Waves/Making_Waves_II_-_Bagni_di_Tiberio_80x60cm_-_Interior_lfdjgt.jpg"
-                  alt="Making Waves II - Bagni di Tiberio - 80x60cm - Interior"
-                  title="Making Waves II - Bagni di Tiberio - 80x60cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038731/Making%20Waves/Making_Waves_II_-_Bagni_di_Tiberio_80x60cm_Interior_2_c2kfnr.jpg"
-                  alt="Making Waves II - Bagni di Tiberio - 80x60cm - Interior 2"
-                  title=" Making Waves II - Bagni di Tiberio - 80x60cm - Interior 2"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038730/Making%20Waves/Making_Waves_III_-_Capri_Coastline_80x60cm_xransx.jpg"
-                  alt="Making Waves III - Capri Coastline - 80x60cm"
-                  title="Making Waves III - Capri Coastline - 80x60cm"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038730/Making%20Waves/Making_Waves_III_-_Capri_Coastline_80x60cm_-_Interior_prjrdv.jpg"
-                  alt="Making Waves III - Capri Coastline - 80x60cm - Interior"
-                  title="Making Waves III - Capri Coastline - 80x60cm - Interior"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038730/Making%20Waves/Making_Waves_IV_-_Jude_Takes_The_Tide_30x30cm_kawo8o.jpg"
-                  alt="Making Waves IV - Jude Takes The Tide - 30x30cm"
-                  title="Making Waves IV - Jude Takes The Tide - 30x30cm"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038730/Making%20Waves/Making_Waves_IV_-_Jude_Takes_The_Tide_-_30x30cm_-_Interior_m96ljh.jpg"
-                  alt="Making Waves IV - Jude Takes The Tide - 30x30cm - Interior"
-                  title="Making Waves IV - Jude Takes The Tide - 30x30cm - Interior"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_V_-_Surfer_Girl_100x150cm_bouczc.jpg"
-                  alt="Making Waves V - Sufer Girl - 100x150cm"
-                  title="Making Waves V - Sufer Girl - 100x150cm"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_V_-_Surfer_Girl_100x150cm_-_Interior_yvrzey.jpg"
-                  alt="Making Waves V - Sufer Girl - 100x150cm - Interior"
-                  title="Making Waves V - Sufer Girl - 100x150cm - Interior"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_V_-_Surfer_Girl_100x150cm_-_Interior_2_b48vii.jpg"
-                  alt="Making Waves V - Sufer Girl - 100x150cm - Interior 2"
-                  title="Making Waves V - Sufer Girl - 100x150cm - Interior 2"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_VI_-_Swimmin_By_The_Rocks_Of_The_Bay_-_30x30cm_jnogw5.jpg"
-                  alt="Making Waves VI - Swimmin' By The Rocks Of The Bay - 30x30cm"
-                  title="Making Waves VI - Swimmin' By The Rocks Of The Bay - 30x30cm"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_VI_-_Swimmin_By_The_Rocks_Of_The_Bay_-_30x30cm_-_Interior_nbjxno.jpg"
-                  alt="Making Waves VI - Swimmin' By The Rocks Of The Bay - 30x30cm - Interior"
-                  title="Making Waves VI - Swimmin' By The Rocks Of The Bay - 30x30cm - Interior"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Waves_Waves_VII_-_Frolicking_Free_-_80x60cm_pd5v6g.jpg"
-                  alt="Making Waves VII - Frolicking Free - 80x60cm"
-                  title="Making Waves VII - Frolicking Free - 80x60cm"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Waves_Waves_VII_-_Frolicking_Free_-_80x60cm_-_Interior_bz6ec3.jpg"
-                  alt="Making Waves VII - Frolicking Free - 80x60cm - Interior"
-                  title="Making Waves VII - Frolicking Free - 80x60cm - Interior"
-                />
-              </li>
-
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_VIII_-_Sicilian_Lemons_-_80x60cm_xocpmg.jpg"
-                  alt="Making Waves VIII - Sicilian Lemons - 80x60cm"
-                  title="Making Waves VIII - Sicilian Lemons - 80x60cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Making_Waves_VIII_-_Sicilian_Lemons_-_80x60cm_-_Interior_ty625m.jpg"
-                  alt="Making Waves VIII - Sicilian Lemons - 80x60cm - Interior"
-                  title="Making Waves VIII - Sicilian Lemons - 80x60cm - Interior"
-                />
-              </li>
-            </ul>
-            <div
-              id="makingWavesHero"
-              class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
-            >
-              View Gallery
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Section 3 - Cosmos -->
-
-      <div
-        id="cosmosContainer"
-        class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
-      >
-        <div class="flex flex-wrap content-center justify-center w-full">
-          <!-- Title -->
-          <div class="w-full p-6 text-center">
-            <h2 class="ml-2 mr-2 text-2xl text-center font-caveat md:text-3xl">
-              Cosmos In Colour (formerly Vitality)
-            </h2>
-          </div>
-          <!-- Viewer -->
-          <div
-            class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
-          >
-            <ul id="cosmosImages">
-              <li>
-                <img
-                  class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704207040/Vitality/AMAZONITE_100x100cm_iopeko.jpg"
-                  alt="Cosmos In Colour - AMAZONITE - 100x100cm"
-                  title="Cosmos In Colour - AMAZONITE - 100x100cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Vitality/AMAZONITE_100x100cm_Interior_yc7bn8.jpg"
-                  alt="Cosmos In Colour - AMAZONITE - 100x100cm - Interior"
-                  title="Cosmos In Colour - AMAZONITE - 100x100cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957936/Vitality/UNITY_100x100cm_mkepyi.jpg"
-                  alt="Cosmos In Colour - UNITY - 100x100cm"
-                  title="Cosmos In Colour - UNITY - 100x100cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957936/Vitality/UNITY_100x100cm_Interior_epapf6.jpg"
-                  alt="Cosmos In Colour - UNITY - 100x100cm - Interior"
-                  title="Cosmos In Colour - UNITY - 100x100cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957936/Vitality/UNITY_100x100cm_Interior_II_d43qvk.jpg"
-                  alt="Cosmos In Colour - UNITY - 100x100cm - Initerior 2"
-                  title="Cosmos In Colour - UNITY - 100x100cm - Interior 2"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Vitality/ORGASM_100x100cm_dxaljs.jpg"
-                  alt="Cosmos In Colour - ORGASM - 100x100cm"
-                  title="Cosmos In Colour - ORGASM - 100x100cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957934/Vitality/ORGASM_100x100cm_Interior_eabmw9.jpg"
-                  alt="Cosmos In Colour - ORGASM - 100x100cm - Interior"
-                  title="Cosmos In Colour - ORGASM - 100x100cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957934/Vitality/ORGASM_100x100cm_Interior_II_silzas.jpg"
-                  alt="Cosmos In Colour - ORGASM - 100x100cm - Interior 2"
-                  title="Cosmos In Colour - ORGASM - 100x100cm - Interior 2"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1704203409/Vitality/EMERALD_50x100cm_sfbrr6.jpg"
-                  alt="Cosmos In Colour - EMERALD - 50x100cm"
-                  title="Cosmos In Colour - EMERALD - 50x100cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Vitality/Emerald_50x100cm_Interior__dfw2ib.jpg"
-                  alt="Cosmos In Colour - EMERALD - 50x100cm - Interior"
-                  title="Cosmos In Colour - EMERALD - 50x100cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Vitality/Emerald_50x100cm_Interior_II_bbhbl5.jpg"
-                  alt="Cosmos In Colour - EMERALD - 50x100cm - Interior 2"
-                  title="Cosmos In Colour - EMERALD - 50x100cm - Interior 2"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Vitality/EMERALD_50x100cm_Interior_III_r4sati.jpg"
-                  alt="Cosmos In Colour - EMERALD - 50x100cm - Interior 3"
-                  title="Cosmos In Colour - EMERALD - 50x100cm - Interor 3"
-                />
-              </li>
-            </ul>
-            <div
-              id="cosmosHero"
-              class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
-            >
-              View Gallery
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Section 4 - Ugbad -->
-      <div
-        id="ugbadAbdiContainer"
-        class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
-      >
-        <div class="flex flex-wrap content-center justify-center w-full">
-          <!-- Title -->
-          <div class="w-full p-6 text-center">
-            <h2 class="ml-2 mr-2 text-2xl text-center font-caveat md:text-3xl">
-              Ugbad Abdi x British Vogue x Givenchy
-            </h2>
-          </div>
-          <!-- Viewer -->
-          <div
-            class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
-          >
-            <ul id="ugbadImages">
-              <li>
-                <img
-                  class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Ugbad/UGBAD_ABDI_X_BRITISH_VOGUE_X_GIVENCHY_II_80x60cm_shgp75.jpg"
-                  alt="Ugbad Abdi x British Vogue x Givenchy II - 80x60cm"
-                  title="Ugbad Abdi x British Vogue x Givenchy II - 80x60cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Ugbad/UGBAD_ABDI_X_BRITISH_VOGUE_X_GIVENCHY_II_Interior_mkpfq9.jpg"
-                  alt="Ugbad Abdi x British Vogue x Givenchy II - 80x60cm - Interior"
-                  title="Ugbad Abdi x British Vogue x Givenchy II - 80x60cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Ugbad/UGBAD_ABDI_X_BRITISH_VOGUE_X_GIVENCHY_I_80x60cm_qfiqth.jpg"
-                  alt="Ugbad Abdi x British Vogue x Givenchy I - 80x60cm"
-                  title="Ugbad Abdi x British Vogue x Givenchy I - 80x60cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/Ugbad/UGBAD_ABDI_X_BRITISH_VOGUE_X_GIVENCHY_I_Interior_vjwnwc.jpg"
-                  alt="Ugbad Abdi x British Vogue x Givenchy I - 80x60cm - Interior"
-                  title="Ugbad Abdi x British Vogue x Givenchy I - 80x60cm - Interior"
-                />
-              </li>
-            </ul>
-            <div
-              id="ugbadHero"
-              class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
-            >
-              View Gallery
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Section 5 - She Is Woman -->
-
-      <div
-        id="womanContainer"
-        class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
-      >
-        <div class="flex flex-wrap content-center justify-center w-full">
-          <!-- Title -->
-          <div class="w-full p-6 text-center">
-            <h2 class="ml-2 mr-2 text-2xl text-center font-caveat md:text-3xl">
-              She is Woman
-            </h2>
-          </div>
-          <!-- Viewer -->
-          <div
-            class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
-          >
-            <ul id="womanImages">
-              <li>
-                <img
-                  class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/BLACK_BEAUTY_50x50cm_ju3y7w.jpg"
-                  alt="She Is Woman - Black Beauty - 50x50cm"
-                  title="She Is Woman - Black Beauty - 50x50cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/BLACK_BEAUTY_50x50cm_Interior_v2utuc.jpg"
-                  alt="She Is Woman - Black Beauty - 50x50cm - Interior"
-                  title="She Is Woman - Black Beauty - 50x50cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/FREIDA_IN_THE_FLESH_60x80cm_hmfwna.jpg"
-                  alt="She Is Woman - Freida In The Flesh - 60x80cm"
-                  title="She Is Woman - Freida In The Flesh - 60x80cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/Freida_in_the_Flesh_60x80cm_Interior_obouqn.jpg"
-                  alt="She Is Woman - Freida In The Flesh - 60x80cm - Interior"
-                  title="She Is Woman - Freida In The Flesh - 60x80cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957930/SheIsWoman/Mon_Cherie_50x50cm_y64avh.jpg"
-                  alt="She Is Woman - Mon Cherie - 50x50cm"
-                  title="She Is Woman - Mon Cherie - 50x50cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957930/SheIsWoman/MON_CHERIE_50x50cm_Interior_li8hqo.jpg"
-                  alt="She Is Woman - Mon Cherie - 50x50cm - Interior"
-                  title="She Is Woman - Mon Cherie - 50x50cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/CITY_GIRL_50x50cm_m2xwfk.jpg"
-                  alt="She Is Woman - City Girl - 50x50cm"
-                  title="She Is Woman - City Girl - 50x50cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/CITY_GIRL_50x50cm_Interior_ov8hvl.jpg"
-                  alt="She Is Woman - City Girl - 50x50cm - Interior"
-                  title="She Is Woman - City Girl - 50x50cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/SheIsWoman/Beatrix_in_Blue_100x100cm_vhvus9.jpg"
-                  alt="She Is Woman - Beatrix In Blue - 100x100cm"
-                  title="She Is Woman - Beatrix In Blue - 100x100cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/Beatrix_in_Blue_100x100cm_Interior_j4zk9k.jpg"
-                  alt="She Is Woman - Beatrix In Blue - 100x100cm - Interior"
-                  title="She Is Woman - Beatrix In Blue - 100x100cm - Interior"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957933/SheIsWoman/She_s_Demure_40x50cm_webu2a.jpg"
-                  alt="She Is Woman - She's Demure - 40x50cm"
-                  title="She Is Woman - She's Demure - 40x50cm"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957929/SheIsWoman/LUNA_40X50cm_Interior_svptcj.jpg"
-                  alt="She Is Woman - Luna - 40x50cm - Interior"
-                  title="She Is Woman - Luna - 40x50cm - Interior"
-                />
-              </li>
-            </ul>
-            <div
-              id="womanHero"
-              class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
-            >
-              View Gallery
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Section 6 - London -->
-
-      <div
-        id="londonContainer"
-        class="flex justify-center w-full p-6 transition-opacity duration-500 ease-in-out transform opacity-0 md:w-1/2 flex-nowrap fade-effect"
-      >
-        <div class="flex flex-wrap content-center justify-center w-full">
-          <!-- Title -->
-          <div class="w-full p-6 text-center">
-            <h2 class="ml-2 mr-2 text-2xl text-center font-caveat md:text-3xl">
-              London Fashion Week
-            </h2>
-          </div>
-          <!-- Viewer -->
-          <div
-            class="flex items-center justify-center w-full overflow-hidden md:w-1/2 group"
-          >
-            <ul id="londonImages">
-              <li>
-                <img
-                  class="relative transition duration-500 hover:scale-110 group-hover:opacity-50"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957932/LFW/BTS_X_LFW_AW_23_wmdm6h.jpg"
-                  alt="BTS x LFW AW 23 I"
-                  title="BTS x LFW AW 23 I"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/BTS_X_LFW_AW_23_II_tsz3bm.jpg"
-                  alt="BTS x LFW AW 23 II"
-                  title="BTS x LFW AW 23 II"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/BTS_X_LFW_AW_23_III_mmhmy9.jpg"
-                  alt="BTS x LFW AW 23 III"
-                  title="BTS x LFW AW 23 III"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/MTG_x_LFW_AW_23_zannxw.jpg"
-                  alt="MTG x LFW AW 23 I"
-                  title="MTG x LFW AW 23 I"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/MTG_X_LFW_AW_23_II_olvj12.jpg"
-                  alt="MTG x LFW AW 23 II"
-                  title="MTG x LFW AW 23 II"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/LFW/MTG_X_LFW_AW_23_III_bqm6we.jpg"
-                  alt="MTG x LFW AW 23 III"
-                  title="MTG x LFW AW 23 III"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/LFW/SHUXUAN_G_X_LFW_AW_23_i26f0x.jpg"
-                  alt="Shuxuan G x LFW AW 23 I"
-                  title="Shuxuan G x LFW AW 23 I"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/LFW/Shuxuan_G_x_LFW_SS_23_vkqan0.jpg"
-                  alt="Shuxuan G x LFW SS 23 I"
-                  title="Shuxuan G x LFW AW 23 I"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/LFW/SHUXUAN_G_X_LFW_SS_23_II_ihtbqq.jpg"
-                  alt="Shuxuan G x LFW SS 23 II"
-                  title="Shuxuan G x LFW AW 23 II"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957928/LFW/SHUXUAN_G_X_LFW_SS_23_III_pwxszr.jpg"
-                  alt="Shuxuan G x LFW SS 23 III"
-                  title="Shuxuan G x LFW AW 23 III"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/Epica_Jewellery_X_LFW_SS_23_abb2no.jpg"
-                  alt="Epica Jewellery x LFW SS 23 I"
-                  title="Epica Jewellery x LFW SS 23 I"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/Epica_Jewellery_X_LFW_SS_23_II_y8ggks.jpg"
-                  alt="Epica Jewellery x LFW SS 23 II"
-                  title="Epica Jewellery x LFW SS 23 II"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957926/LFW/Epica_Jewellery_X_LFW_SS_23_III_rgym2f.jpg"
-                  alt="Epica Jewellery x LFW SS 23 III"
-                  title="Epica Jewellery x LFW SS 23 III"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957927/LFW/British_Vogue_SEP_21_dyuskh.jpg"
-                  alt="British Vogue x LFW Sept 21"
-                  title="British Vogue x LFW Sept 21"
-                />
-              </li>
-              <li>
-                <img
-                  class="hidden"
-                  src="https://res.cloudinary.com/bak2k3/image/upload/v1703957926/LFW/British_Vogue_AUG_20_lx1iez.jpg"
-                  alt="British Vogue x LFW Aug 20"
-                  title="British Vogue x LFW Aug 20"
-                />
-              </li>
-            </ul>
-            <div
-              id="londonHero"
-              class="absolute z-10 items-center justify-center block text-lg font-semibold text-white duration-300 opacity-0 md:text-2xl w-100inset-0 group-hover:opacity-100"
-            >
-              View Gallery
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <footer
       class="sticky bottom-0 z-50 flex flex-wrap justify-center flex-shrink w-full pb-3 align-middle bg-transparent"
@@ -880,8 +885,6 @@
     <!-- Javascript code -->
     <script src="/src/js/nav.js"></script>
     <script src="/src/js/fade_effect.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="/src/js/splide.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"
       integrity="sha512-EC3CQ+2OkM+ZKsM1dbFAB6OGEPKRxi6EDRnZW9ys8LghQRAq6cXPUgXCCujmDrXdodGXX9bqaaCRtwj4h4wgSQ=="

@@ -3,6 +3,23 @@
 @tailwind utilities;
 
 
+@layer base {
+
+    body {
+        @apply font-montserrat
+    }
+
+    h1, h2, h3 {
+        @apply font-carmorantGaramond
+    }
+
+    nav a {
+        @apply font-carmorantGaramond
+    }
+
+}
+
+
 /*  Custom Title for Viewer */
 .viewer-title {
     font-size: 1rem !important;
@@ -10,7 +27,7 @@
     opacity: 100% !important;
     background-color: #1B1C1B;
     color: #FCF2F2 !important;
-    padding: 4px !important;
+    padding: 6px !important;
     word-wrap: break-word !important;
     white-space: wrap !important;
 }

@@ -8,13 +8,9 @@ module.exports = {
         "hero-pattern": "url('src/img/hero-background.jpeg')",
       },
       fontFamily: {
-        yellowtail: ["Yellowtail", "cursive"],
         caveat: ["Caveat", "cursive"],
-        arimo: ["Arimo", "sans-serif"],
-        assistant: ["Assistant", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
-        prata: ["Prata", "sans-serif"],
-        notoSerifDisplay: ["Noto Serif Display", "sans-serif"],
+        carmorantGaramond: ["Cormorant Garamond", "sans-serif"],
       },
     },
     colors: {

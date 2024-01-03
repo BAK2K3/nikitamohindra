@@ -7,24 +7,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Arimo&family=Assistant&family=Caveat:wght@400;600&family=Prata&family=Yellowtail&family=Montserrat:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?&family=Cormorant+Garamond:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.css"
+      integrity="sha512-eG8C/4QWvW9MQKJNw2Xzr0KW7IcfBSxljko82RuSs613uOAg/jHEeuez4dfFgto1u6SRI/nXmTr9YPCjs1ozBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body
-    class="flex flex-col min-h-screen text-base bg-customWhite font-montserrat text-customBlack"
+    class="flex flex-col flex-wrap justify-center min-h-screen text-base bg-customWhite text-customBlack"
   >
     <!-- Nav Bar -->
     <nav
       id="navbar"
-      class="relative z-50 flex flex-wrap items-center justify-between p-6"
+      class="relative z-50 flex flex-row flex-wrap items-center justify-between w-screen p-6 lg:flex-col"
     >
       <div
         id="navHeading"
         class="flex items-center flex-shrink-0 mr-6 duration-300 text-customBlack"
       >
         <a href="/src/html/index.html"
-          ><span class="ml-4 text-4xl font-caveat">Nikita Mohindra</span></a
+          ><span
+            class="text-4xl font-medium tracking-tighter uppercase font-carmorantGaramond"
+            >Nikita Mohindra</span
+          ></a
         >
       </div>
       <!-- Open Close -->
@@ -63,7 +77,7 @@
         class="max-h-0 lg:!max-h-none lg:!overflow-hidden w-full block overflow-hidden flex-grow lg:flex lg:items-center transition-all lg:w-auto"
       >
         <div
-          class="flex flex-row justify-end text-sm md:text-base lg:flex-grow font-prata"
+          class="flex flex-row justify-end text-xl lg:flex-grow font-carmorantGaramond"
         >
           <a
             href="/src/html/index.html"
@@ -125,7 +139,7 @@
       </div>
     </div>
 
-    <section id="aboutSection" class="flex-1 w-full">
+    <div id="aboutSection" class="flex-1 w-full">
       <div id="aboutMeContainer" class="flex flex-row flex-wrap h-full">
         <div
           id="aboutMeVideo"
@@ -147,7 +161,7 @@
           <!-- Header -->
           <div id="aboutHeader" class="flex justify-center w-full flex-nowrap">
             <h1
-              class="ml-2 mr-2 text-3xl transition-opacity duration-500 ease-in-out transform opacity-0 fade-effect font-prata"
+              class="ml-2 mr-2 text-3xl underline transition-opacity duration-500 ease-in-out transform opacity-0 lg:text-4xl underline-offset-4 decoration-1 fade-effect"
             >
               About
             </h1>
@@ -160,7 +174,7 @@
               class="flex flex-wrap items-center justify-around w-3/4 md:flex"
             >
               <p
-                class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mb-0 md:mr-4"
+                class="w-full mb-6 text-sm lg:text-base md:w-1/2 md:mb-0 md:mr-4"
               >
                 Art has been a monumental part of Nikita’s life since her young
                 adolescence. Nikita is a published Artist based in London and
@@ -222,7 +236,7 @@
               class="flex flex-wrap items-center justify-around w-3/4 md:flex-row-reverse md:flex"
             >
               <p
-                class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mb-0 md:ml-4 md:mr-0"
+                class="w-full mb-6 text-sm lg:text-base md:w-1/2 md:mb-0 md:ml-4 md:mr-0"
               >
                 In 2023, Nikita completed her Art training in figurative
                 painting and abstraction at the Art Academy London, to further
@@ -282,7 +296,7 @@
             <div
               class="flex flex-wrap items-center justify-around w-3/4 md:flex"
             >
-              <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mr-4">
+              <p class="w-full mb-6 text-sm lg:text-base md:w-1/2 md:mr-4">
                 Her artistic approach is largely influenced by the likes of
                 Tamara De Lempicka, Georgia O’Keeffe and Damien Hirst. She is
                 fascinated by anatomy and the mystery and movement of abstract
@@ -341,7 +355,7 @@
             <div
               class="flex flex-wrap items-center justify-around w-3/4 md:flex-row-reverse md:flex"
             >
-              <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:ml-4">
+              <p class="w-full mb-6 text-sm lg:text-base md:w-1/2 md:ml-4">
                 Channeling her emotions into both her color palette and work,
                 Nikita lends wisdom to the large and expressive brush strokes
                 that act as a reflection of her own personal identity. They
@@ -404,7 +418,7 @@
             <div
               class="flex flex-wrap items-center justify-around w-3/4 md:flex"
             >
-              <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:mr-4">
+              <p class="w-full mb-6 text-sm lg:text-base md:w-1/2 md:mr-4">
                 Through figurative paintings, Nikita explores the nuances of
                 identity and color. She enjoys forging a connection between
                 female subjects and their surroundings, seeking to explore the
@@ -464,7 +478,7 @@
             <div
               class="flex flex-wrap items-center justify-around w-3/4 md:flex-row-reverse md:flex"
             >
-              <p class="w-full mb-6 text-sm md:text-base md:w-1/2 md:ml-4">
+              <p class="w-full mb-6 text-sm lg:text-base md:w-1/2 md:ml-4">
                 When not working from her home studio in London, Nikita travels
                 frequently in search of inspiration, translating her experiences
                 through vibrant perspectives on art, born through a fascination
@@ -518,7 +532,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <footer
       class="fixed bottom-0 z-50 flex flex-wrap justify-center flex-shrink w-full pb-3 align-middle bg-transparent"
