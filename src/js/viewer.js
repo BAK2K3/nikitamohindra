@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       rotateRight: 4,
       flipHorizontal: 4,
       flipVertical: 4,
+      slideOnTouch: true,
     },
     title: [true, (image) => `${image.alt}`],
     transition: true,

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (splides.length) {
     const splideDefaultOptions = {
       rewind: true,
-      heightRatio: 1,
+      heightRatio: 1.2,
       perPage: 1,
       perMove: 1,
       gap: 10,
