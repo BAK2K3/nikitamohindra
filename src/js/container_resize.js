@@ -1,5 +1,8 @@
 // Adjust the height of the fixed-height div
 function adjustFixedHeightDiv() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+
   const windowHeight =
     visualViewport.height ||
     window.innerHeight ||
