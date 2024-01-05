@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (splides.length) {
     const splideDefaultOptions = {
       rewind: true,
-      heightRatio: 1.2,
+      heightRatio: 1.5,
       perPage: 1,
       perMove: 1,
       gap: 10,
@@ -12,7 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
       focus: "center",
       mediaQuery: "min",
       breakpoints: {
-        1000: {
+        450: {
+          heightRatio: 1.2,
+        },
+        640: {
+          heightRatio: 1.0,
+        },
+        768: {
+          heightRatio: 0.8,
+        },
+        1024: {
           heightRatio: 0.5,
           perPage: 2,
           perMove: 3,
