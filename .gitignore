@@ -24,6 +24,7 @@
 !.mailmap
 !.nycrc
 !.yamllint.yaml
+!.htcaccess
 
 # === Rules for root dir ===
 /core
@@ -124,6 +125,7 @@ tools/*/*.i.tmp
 /gcovr
 /build
 /coverage
+!sitemap.xml
 
 # === Rules for Xcode artifacts ===
 *.xcodeproj
