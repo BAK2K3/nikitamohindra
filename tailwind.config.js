@@ -11,7 +11,7 @@ module.exports = {
       },
     },
     colors: {
-      customWhite: "#FCF2F2",
+      customWhite: "#FFF5EE",
       softGreen: "#E8E2C3",
       strongGreen: "#9EB375",
       customBlue: "#3E7578",

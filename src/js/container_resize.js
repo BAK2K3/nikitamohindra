@@ -9,25 +9,21 @@ function adjustFixedHeightDiv() {
   const aboutVideoElement = document.getElementById("aboutMeVideo");
   const aboutbodyElement = document.getElementById("aboutMeBody");
   const homeBackgroundElement = document.getElementById("homeBackground");
-  const homeSectionElement = document.getElementById("homeSection");
   const homeBackgroundElement2 = document.getElementById("homeBackground2");
-  const homeSectionElement2 = document.getElementById("homeSection2");
+  const contactSectionElement = document.getElementById("contactSection");
 
   if (aboutVideoElement && aboutbodyElement) {
     aboutVideoElement.style.height = windowHeight - navbarHeight + "px";
     aboutbodyElement.style.height = windowHeight - navbarHeight + "px";
   }
 
-  if (
-    homeBackgroundElement &&
-    homeSectionElement &&
-    homeBackgroundElement2 &&
-    homeSectionElement2
-  ) {
+  if (homeBackgroundElement && homeBackgroundElement2) {
     homeBackgroundElement.style.height = windowHeight - navbarHeight + "px";
-    // homeSectionElement.style.height = windowHeight - navbarHeight + "px";
     homeBackgroundElement2.style.height = windowHeight - navbarHeight + "px";
-    // homeSectionElement2.style.height = windowHeight - navbarHeight + "px";
+  }
+
+  if (contactSectionElement) {
+    contactSectionElement.style.height = windowHeight - navbarHeight + "px";
   }
 }
 

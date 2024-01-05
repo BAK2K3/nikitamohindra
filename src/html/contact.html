@@ -134,7 +134,51 @@
       </div>
     </div>
 
-    <div id="contactSection" class="w-full flex-grow-1"></div>
+    <div
+      id="contactSection"
+      class="w-full transition-opacity duration-300 ease-in-out transform opacity-0 fade-effect"
+    >
+      <img
+        id="contactImage"
+        src="https://res.cloudinary.com/bak2k3/image/upload/v1704038732/Making%20Waves/Waves_Waves_VII_-_Frolicking_Free_-_80x60cm_pd5v6g.jpg"
+        alt="Making Waves VII - Frolicking Free"
+        class="relative object-cover object-top w-full h-full"
+      />
+
+      <div
+        class="absolute top-0 left-0 flex items-center justify-center w-full h-full text-wrapper"
+      >
+        <div
+          class="flex flex-col items-center w-3/4 h-auto transition-opacity duration-500 ease-in-out transform border rounded-md opacity-0 md:w-1/2 2xl:w-1/4 2xl:w:1/4 bg-customWhite bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-customBlack fade-effect"
+        >
+          <h1
+            class="w-full mt-6 text-3xl text-center underline lg:text-4xl underline-offset-4 decoration-1"
+          >
+            Contact
+          </h1>
+
+          <div class="flex flex-col justify-center h-full p-12 text-center">
+            <h2 class="text-2xl font-semibold">Instagram</h2>
+            <a
+              class="text-sm font-medium duration-300 hover:text-customBlue"
+              href="https://www.instagram.com/nikitamohindraart/"
+              rel="external"
+              target="_blank"
+              >@NikitaMohindraArt</a
+            >
+
+            <h2 class="mt-6 text-2xl font-semibold">Email</h2>
+            <a
+              class="text-sm font-medium duration-300 hover:text-customBlue"
+              href="mailto:studio@nikitamohindra.com"
+              rel="external"
+              target="_blank"
+              >studio@nikitamohindra.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer
       class="fixed bottom-0 z-50 flex flex-wrap justify-center flex-shrink w-full pb-3 align-middle bg-transparent"
@@ -160,5 +204,7 @@
 
     <!-- Javascript code -->
     <script src="/src/js/nav.js"></script>
+    <script src="/src/js/container_resize.js"></script>
+    <script src="/src/js/fade_effect.js"></script>
   </body>
 </html>
