@@ -25,9 +25,9 @@ function adjustFixedHeightDiv() {
     homeSectionElement2
   ) {
     homeBackgroundElement.style.height = windowHeight - navbarHeight + "px";
-    homeSectionElement.style.height = windowHeight - navbarHeight + "px";
+    // homeSectionElement.style.height = windowHeight - navbarHeight + "px";
     homeBackgroundElement2.style.height = windowHeight - navbarHeight + "px";
-    homeSectionElement2.style.height = windowHeight - navbarHeight + "px";
+    // homeSectionElement2.style.height = windowHeight - navbarHeight + "px";
   }
 }
 
