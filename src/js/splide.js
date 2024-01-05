@@ -14,12 +14,24 @@ document.addEventListener("DOMContentLoaded", function () {
       breakpoints: {
         450: {
           heightRatio: 1.2,
+          rewind: true,
+          gap: 10,
+          pagination: false,
+          focus: "center",
         },
         640: {
           heightRatio: 1.0,
+          rewind: true,
+          gap: 10,
+          pagination: false,
+          focus: "center",
         },
         768: {
           heightRatio: 0.8,
+          rewind: true,
+          gap: 10,
+          pagination: false,
+          focus: "center",
         },
         1024: {
           heightRatio: 0.5,
