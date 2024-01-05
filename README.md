@@ -6,3 +6,5 @@ A static HTML/CSS/JS website for Artist Nikita Mohindra
 
 * [TailwindCSS](https://tailwindcss.com/)
 * [Viewer.js](https://github.com/fengyuanchen/viewerjs/tree/main)
+* [SplideJS](https://splidejs.com/)
+* [Rellax](https://dixonandmoe.com/rellax/)
