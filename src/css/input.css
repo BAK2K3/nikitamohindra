@@ -53,3 +53,11 @@ display: none;
 @media only screen and (min-width: 768px) {#contactImage {
     object-position: 50% 20%;
 }}
+
+.splide__arrow--next {
+    right: 0em !important;
+}
+
+.splide__arrow--prev {
+    left: 0em !important;
+}

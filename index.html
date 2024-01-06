@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
 
     <!-- Primary Meta Tags -->
     <title>Nikita Mohindra Art</title>
@@ -76,11 +79,11 @@
   <body
     class="flex flex-col flex-wrap justify-center h-full m-0 text-base bg-customWhite text-customBlack"
   >
-    <div class="flex flex-col h-full body-wrapper">
+    <div class="flex flex-col content-center w-full h-full body-wrapper">
       <!-- Nav Bar -->
       <nav
         id="navbar"
-        class="sticky top-0 z-50 flex flex-row flex-wrap items-center justify-between flex-grow-0 flex-shrink w-full p-6 duration-500 lg:flex-col bg-customWhite basis-auto"
+        class="sticky top-0 z-50 flex flex-row flex-wrap items-center content-between justify-between w-full p-6 duration-500 lg:flex-col lg:content-center bg-customWhite"
       >
         <div
           id="navHeading"
@@ -184,16 +187,13 @@
           >
         </div>
       </div>
-      <div
-        id="homeSection"
-        class="flex flex-col flex-grow flex-shrink basis-auto"
-      >
+      <div id="homeSection" class="flex flex-col">
         <!-- Splash -->
-        <div id="homeBackground" class="relative flex h-full">
+        <div id="homeBackground" class="relative flex">
           <img
             src="https://media.nikitamohindra.com/Compressed/Legacy/The_Legacy_of_the_Ocean_I_-_Cap_d_Antibes_80x60cm.jpeg"
             alt="Legacy of the Ocean - Cap D'Antibes"
-            class="relative object-contain w-auto h-full transition-opacity duration-300 ease-in-out rellax max-w-none"
+            class="relative object-cover w-full h-screen transition-opacity duration-300 ease-in-out rellax max-w-none"
             data-rellax-speed="-5"
           />
           <div
@@ -231,7 +231,7 @@
             Upcoming Events
           </h2>
           <div
-            class="w-full xl:w-3/4 splide"
+            class="w-full mb-10 2xl:w-3/4 splide"
             aria-label="Upcoming Events Carousel"
           >
             <div class="splide__track">
@@ -246,7 +246,7 @@
                   />
                 </li>
                 <li
-                  class="flex items-center justify-center px-12 text-xs md:pr-12 lg:py-8 lg:pr-20 splide__slide md:text-sm"
+                  class="flex items-center justify-center px-8 text-xs lg:py-8 lg:pr-20 splide__slide md:text-sm"
                 >
                   <div class="w-100">
                     <h3 class="p-3 text-lg">Art Below Pimlico 2024</h3>
@@ -289,7 +289,7 @@
                   />
                 </li>
                 <li
-                  class="flex items-center justify-center p-12 pr-12 text-xs md: lg:py-8 lg:pr-20 splide__slide md:text-sm"
+                  class="flex items-center justify-center px-8 text-xs lg:py-8 lg:pr-20 splide__slide md:text-sm"
                 >
                   <div class="w-100">
                     <h3 class="p-3 text-lg">Cala Sinzias, Italy 2024</h3>
@@ -315,7 +315,7 @@
         </div>
       </div>
 
-      <div id="homeSection2" class="flex flex-col w-full h-full">
+      <div id="homeSection2" class="flex flex-col">
         <!-- Splash 2 -->
         <div id="homeBackground2" class="relative flex w-full">
           <img
@@ -336,7 +336,7 @@
             As Seen
           </h2>
           <div
-            class="w-full mb-10 xl:w-3/4 splide"
+            class="w-full mb-10 2xl:w-3/4 splide"
             aria-label="As Seen Carousel"
           >
             <div class="splide__track">
@@ -351,7 +351,7 @@
                   />
                 </li>
                 <li
-                  class="flex items-center justify-center px-12 text-xs md:pr-12 lg:py-8 lg:pr-20 splide__slide md:text-sm"
+                  class="flex items-center justify-center px-8 text-xs lg:py-8 lg:pr-20 splide__slide md:text-sm"
                 >
                   <div class="w-100">
                     <h3 class="p-3 text-lg">Feminist - 2023</h3>
@@ -397,7 +397,7 @@
                   />
                 </li>
                 <li
-                  class="flex items-center justify-center px-12 text-xs md:pr-12 lg:py-8 lg:pr-20 splide__slide md:text-sm"
+                  class="flex items-center justify-center px-8 text-xs lg:py-8 lg:pr-20 splide__slide md:text-sm"
                 >
                   <div class="w-100">
                     <p class="px-3">#FEMINISTZINE</p>
